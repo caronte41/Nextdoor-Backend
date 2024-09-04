@@ -4917,11 +4917,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Momo\\source\\repos\\NextDoorBackend\\NextDoorBackend\\NextDoorBackend.csproj",
+      "projectUniqueName": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\NextDoorBackend.csproj",
       "projectName": "NextDoorBackend",
-      "projectPath": "C:\\Users\\Momo\\source\\repos\\NextDoorBackend\\NextDoorBackend\\NextDoorBackend.csproj",
+      "projectPath": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\NextDoorBackend.csproj",
       "packagesPath": "C:\\Users\\Momo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Momo\\source\\repos\\NextDoorBackend\\NextDoorBackend\\obj\\",
+      "outputPath": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Momo\\AppData\\Roaming\\NuGet\\NuGet.Config",

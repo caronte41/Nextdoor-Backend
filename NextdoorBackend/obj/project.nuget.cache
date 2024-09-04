@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0QYst+noJ/rj+2GmR1hSt9oah3EcCGiYe+1oabltFbsnGCBEFzV0o45HqnYk5j2iNmvTqxtHlpoXbhdZoz4+vw==",
+  "dgSpecHash": "1deQ1252AtxuUV+CEsRjYzd4tB6+/gDuQf1uw17z7NAXSpQ7/V7sSVgGRoGeAtZ34Igqkenz/O5tDkVsUUnPaA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Momo\\source\\repos\\NextDoorBackend\\NextDoorBackend\\NextDoorBackend.csproj",
+  "projectFilePath": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\NextDoorBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Momo\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Momo\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
