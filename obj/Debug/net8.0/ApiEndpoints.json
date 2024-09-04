@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "NextDoorBackend.Controllers.EmployeeController",
+    "Method": "GetEmployeeById",
+    "RelativePath": "api/Employee/GetEmployeeById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NextDoorBackend.ClassLibrary.Common.BaseResponseDto\u00601[[NextDoorBackend.ClassLibrary.Employee.Response.GetEmployeeByIdResponse, NextDoorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NextDoorBackend.Controllers.EmployeeController",
+    "Method": "UpsertEmployee",
+    "RelativePath": "api/Employee/UpsertEmployee",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDto",
+        "Type": "NextDoorBackend.ClassLibrary.Employee.Request.UpsertEmployeeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NextDoorBackend.ClassLibrary.Common.BaseResponseDto\u00601[[NextDoorBackend.ClassLibrary.Employee.Response.UpsertEmployeeResponse, NextDoorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
