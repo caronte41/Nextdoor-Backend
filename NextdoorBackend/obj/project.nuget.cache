@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1deQ1252AtxuUV+CEsRjYzd4tB6+/gDuQf1uw17z7NAXSpQ7/V7sSVgGRoGeAtZ34Igqkenz/O5tDkVsUUnPaA==",
+  "dgSpecHash": "fZ/kX66SY0b0qu8cupqVMh8Srn0XrpZQirSo7OdSifCaCBjcwXeKLHxL+XOlsQv1OypyUo+bTq+h3O2vJ2OUUg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\NextDoorBackend.csproj",
   "expectedPackageFiles": [
@@ -55,9 +55,13 @@
     "C:\\Users\\Momo\\.nuget\\packages\\microsoft.web.infrastructure\\1.0.0\\microsoft.web.infrastructure.1.0.0.nupkg.sha512",
     "C:\\Users\\Momo\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Momo\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\Momo\\.nuget\\packages\\nettopologysuite\\2.5.0\\nettopologysuite.2.5.0.nupkg.sha512",
+    "C:\\Users\\Momo\\.nuget\\packages\\nettopologysuite.io.postgis\\2.1.0\\nettopologysuite.io.postgis.2.1.0.nupkg.sha512",
     "C:\\Users\\Momo\\.nuget\\packages\\newtonsoft.json\\7.0.1\\newtonsoft.json.7.0.1.nupkg.sha512",
     "C:\\Users\\Momo\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512",
     "C:\\Users\\Momo\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.2\\npgsql.entityframeworkcore.postgresql.8.0.2.nupkg.sha512",
+    "C:\\Users\\Momo\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql.nettopologysuite\\8.0.2\\npgsql.entityframeworkcore.postgresql.nettopologysuite.8.0.2.nupkg.sha512",
+    "C:\\Users\\Momo\\.nuget\\packages\\npgsql.nettopologysuite\\8.0.2\\npgsql.nettopologysuite.8.0.2.nupkg.sha512",
     "C:\\Users\\Momo\\.nuget\\packages\\swashbuckle\\5.6.0\\swashbuckle.5.6.0.nupkg.sha512",
     "C:\\Users\\Momo\\.nuget\\packages\\swashbuckle.aspnetcore\\6.7.3\\swashbuckle.aspnetcore.6.7.3.nupkg.sha512",
     "C:\\Users\\Momo\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.7.3\\swashbuckle.aspnetcore.swagger.6.7.3.nupkg.sha512",

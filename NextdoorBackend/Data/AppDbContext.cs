@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 using NextDoorBackend.SDK.Entities;
 using Npgsql;
 
@@ -19,11 +20,10 @@ namespace NextDoorBackend.Data
             var connectionString = Configuration.GetConnectionString("WebApiDatabase");
 
             options.UseNpgsql(connectionString, o =>
-            {
-                o.CommandTimeout(40); // Set the command timeout to 180 seconds
-            });
+                    o.UseNetTopologySuite());
         }
 
         public DbSet<EmployeeEntity> Employees { get; set; }
+        public DbSet<NeighborhoodEntity> Neighborhoods { get; set; }
     }
 }

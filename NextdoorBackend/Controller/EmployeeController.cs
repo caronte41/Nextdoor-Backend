@@ -29,8 +29,7 @@ namespace NextDoorBackend.Controllers
             try
             {
                     var response = await _employeeInteractions.UpsertEmployee(requestDto);
-                    return BaseResponseDto<UpsertEmployeeResponse>.Success(response);   
-
+                    return BaseResponseDto<UpsertEmployeeResponse>.Success(response);  
             }
             catch (Exception ex)
             {

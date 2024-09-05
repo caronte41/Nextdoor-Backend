@@ -1003,6 +1003,38 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
+      "NetTopologySuite/2.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NetTopologySuite.IO.PostGis/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "NetTopologySuite": "[2.0.0, 3.0.0-A)"
+        },
+        "compile": {
+          "lib/netstandard2.1/NetTopologySuite.IO.PostGis.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/NetTopologySuite.IO.PostGis.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Newtonsoft.Json/7.0.1": {
         "type": "package",
         "compile": {
@@ -1047,6 +1079,44 @@
         },
         "runtime": {
           "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite/8.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.2",
+          "Npgsql.NetTopologySuite": "8.0.2"
+        },
+        "compile": {
+          "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite.targets": {}
+        }
+      },
+      "Npgsql.NetTopologySuite/8.0.2": {
+        "type": "package",
+        "dependencies": {
+          "NetTopologySuite": "2.5.0",
+          "NetTopologySuite.IO.PostGIS": "2.1.0",
+          "Npgsql": "8.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Npgsql.NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Npgsql.NetTopologySuite.dll": {
             "related": ".xml"
           }
         }
@@ -3523,6 +3593,35 @@
         "mono.texttemplating.nuspec"
       ]
     },
+    "NetTopologySuite/2.5.0": {
+      "sha512": "5/+2O2ADomEdUn09mlSigACdqvAf0m/pVPGtIPEPQWnyrVykYY0NlfXLIdkMgi41kvH9kNrPqYaFBTZtHYH7Xw==",
+      "type": "package",
+      "path": "nettopologysuite/2.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/NetTopologySuite.dll",
+        "lib/netstandard2.0/NetTopologySuite.xml",
+        "nettopologysuite.2.5.0.nupkg.sha512",
+        "nettopologysuite.nuspec"
+      ]
+    },
+    "NetTopologySuite.IO.PostGis/2.1.0": {
+      "sha512": "3W8XTFz8iP6GQ5jDXK1/LANHiU+988k1kmmuPWNKcJLpmSg6CvFpbTpz+s4+LBzkAp64wHGOldSlkSuzYfrIKA==",
+      "type": "package",
+      "path": "nettopologysuite.io.postgis/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/NetTopologySuite.IO.PostGis.dll",
+        "lib/netstandard2.0/NetTopologySuite.IO.PostGis.xml",
+        "lib/netstandard2.1/NetTopologySuite.IO.PostGis.dll",
+        "lib/netstandard2.1/NetTopologySuite.IO.PostGis.xml",
+        "nettopologysuite.io.postgis.2.1.0.nupkg.sha512",
+        "nettopologysuite.io.postgis.nuspec"
+      ]
+    },
     "Newtonsoft.Json/7.0.1": {
       "sha512": "q3V4KLetMLnt1gpAVWgtXnHjKs0UG/RalBc29u2ZKxd5t5Ze4JBL5WiiYIklJyK/5CRiIiNwigVQUo0FgbsuWA==",
       "type": "package",
@@ -3583,6 +3682,37 @@
         "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.xml",
         "npgsql.entityframeworkcore.postgresql.8.0.2.nupkg.sha512",
         "npgsql.entityframeworkcore.postgresql.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite/8.0.2": {
+      "sha512": "NO4EXEsa0iRHUmHGss7U1fpAUKJ0yz9RIG284NZFOfqysm9GgrFM59OKdzjLc1br1EILv78DLL/uj0BD0fcPVw==",
+      "type": "package",
+      "path": "npgsql.entityframeworkcore.postgresql.nettopologysuite/8.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite.targets",
+        "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite.dll",
+        "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite.xml",
+        "npgsql.entityframeworkcore.postgresql.nettopologysuite.8.0.2.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.nettopologysuite.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Npgsql.NetTopologySuite/8.0.2": {
+      "sha512": "FQtqjMyZM9/V480rehWMah+KYqeBfCtk77n+pShPFZ2M+DSE+vn5tjpKZX02/oeTbWeExPBVya2idMttB0d7oQ==",
+      "type": "package",
+      "path": "npgsql.nettopologysuite/8.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/Npgsql.NetTopologySuite.dll",
+        "lib/netstandard2.0/Npgsql.NetTopologySuite.xml",
+        "npgsql.nettopologysuite.8.0.2.nupkg.sha512",
+        "npgsql.nettopologysuite.nuspec",
         "postgresql.png"
       ]
     },
@@ -4905,8 +5035,10 @@
       "Microsoft.EntityFrameworkCore.Design >= 8.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.8",
+      "NetTopologySuite >= 2.5.0",
       "Npgsql >= 8.0.3",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.2",
+      "Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite >= 8.0.2",
       "Swashbuckle >= 5.6.0",
       "Swashbuckle.AspNetCore >= 6.7.3"
     ]
@@ -4979,11 +5111,19 @@
             "target": "Package",
             "version": "[8.0.8, )"
           },
+          "NetTopologySuite": {
+            "target": "Package",
+            "version": "[2.5.0, )"
+          },
           "Npgsql": {
             "target": "Package",
             "version": "[8.0.3, )"
           },
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "target": "Package",
+            "version": "[8.0.2, )"
+          },
+          "Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite": {
             "target": "Package",
             "version": "[8.0.2, )"
           },
