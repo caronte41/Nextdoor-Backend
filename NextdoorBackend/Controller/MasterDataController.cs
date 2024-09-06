@@ -52,18 +52,58 @@ namespace NextDoorBackend.Controllers
                 return BaseResponseDto<UpsertGenderResponse>.Fail($"Internal server error: {ex.Message}");
             }
         }
-        //[HttpGet("GetEmployeeById")]
-        //public async Task<BaseResponseDto<GetEmployeeByIdResponse>> GetEmployeeById([FromQuery] GetEmployeeByIdRequest requestDto)
-        //{
-        //    try
-        //    {
-        //        var response = await _employeeInteractions.GetEmployeeById(requestDto);
-        //        return BaseResponseDto<GetEmployeeByIdResponse>.Success(response);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return BaseResponseDto<GetEmployeeByIdResponse>.Fail($"Internal server error: {ex.Message}");
-        //    }
-        //}
+        [HttpGet("GetAllGenders")]
+        public async Task<BaseResponseDto<List<GetGendersResponse>>> GetAllGenders([FromQuery]GetGendersRequest requestDto)
+        {
+            try
+            {
+                var response = await _masterDataInteractions.GetAllGenders(requestDto);
+                return BaseResponseDto<List<GetGendersResponse>>.Success(response);
+            }
+            catch (Exception ex)
+            {
+                return BaseResponseDto<List<GetGendersResponse>>.Fail($"Internal server error: {ex.Message}");
+            }
+        }
+        [HttpGet("GetAllBusinessCategories")]
+        public async Task<BaseResponseDto<List<GetBusinessCategoriesResponse>>> GetAllBusinessCategories([FromQuery] GetBusinessCategoriesRequest requestDto)
+        {
+            try
+            {
+                var response = await _masterDataInteractions.GetAllBusinessCategories(requestDto);
+                return BaseResponseDto<List<GetBusinessCategoriesResponse>>.Success(response);
+            }
+            catch (Exception ex)
+            {
+                return BaseResponseDto<List<GetBusinessCategoriesResponse>>.Fail($"Internal server error: {ex.Message}");
+            }
+        }
+        [HttpGet("GetGenderById")]
+        public async Task<BaseResponseDto<GetGenderByIdResponse>> GetGenderById([FromQuery] GetGenderByIdRequest requestDto)
+        {
+            try
+            {
+                var response = await _masterDataInteractions.GetGenderById(requestDto);
+                return BaseResponseDto<GetGenderByIdResponse>.Success(response);
+            }
+            catch (Exception ex)
+            {
+                return BaseResponseDto<GetGenderByIdResponse>.Fail($"Internal server error: {ex.Message}");
+            }
+        }
+        [HttpGet("GetBusinessCategoryById")]
+        public async Task<BaseResponseDto<GetBusinessCategoryByIdResponse>> GetBusinessCategoryById([FromQuery] GetBusinessCategoryByIdRequest requestDto)
+        {
+            try
+            {
+                var response = await _masterDataInteractions.GetBusinessCategoryById(requestDto);
+                return BaseResponseDto<GetBusinessCategoryByIdResponse>.Success(response);
+            }
+            catch (Exception ex)
+            {
+                return BaseResponseDto<GetBusinessCategoryByIdResponse>.Fail($"Internal server error: {ex.Message}");
+            }
+        }
+       
     }
 }

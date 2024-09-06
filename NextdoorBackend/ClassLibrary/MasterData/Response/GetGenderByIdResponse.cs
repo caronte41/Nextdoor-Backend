@@ -2,5 +2,7 @@
 {
     public class GetGenderByIdResponse
     {
+        public Guid? Id { get; set; }
+        public string? GenderName { get; set; }
     }
 }
