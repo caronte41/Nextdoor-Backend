@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using NextDoorBackend.Business.Employee;
+using NextDoorBackend.Business.MasterData;
 using NextDoorBackend.Data;  // Adjust the namespace based on your project structure
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +17,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 // Build the app
 builder.Services.AddScoped<IEmployeeInteractions, EmployeeInteractions>();
+builder.Services.AddScoped<IMasterDataInteractions, MasterDataInteractions>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
