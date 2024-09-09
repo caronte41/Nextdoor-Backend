@@ -34,6 +34,7 @@ namespace NextDoorBackend.Business.Profile
                     individualProfileEntity.ProfilePhoto = request.ProfilePhoto;
                     individualProfileEntity.CoverPhoto = request.CoverPhoto;
                     individualProfileEntity.Bio = request.Bio;
+                    individualProfileEntity.GenderId = request.GenderId;
                     individualProfileEntity.Address = request.Address;
                     individualProfileEntity.NeighborhoodId = request.NeighborhoodId;
 
