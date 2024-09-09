@@ -24,6 +24,12 @@ namespace NextDoorBackend.Data
                     o.UseNetTopologySuite());
         }
 
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseNpgsql("WebApiDatabase",
+        //        npgsqlOptions => npgsqlOptions.UseNetTopologySuite());
+        //}
+
         public DbSet<EmployeeEntity> Employees { get; set; }
         public DbSet<NeighborhoodEntity> Neighborhoods { get; set; }
         public DbSet<AccountsEntity> Accounts { get; set; }

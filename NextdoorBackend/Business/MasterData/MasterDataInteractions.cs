@@ -1,14 +1,12 @@
 ﻿using Mapster;
 using Microsoft.EntityFrameworkCore;
 using NextDoorBackend.Business.MasterData;
-using NextDoorBackend.ClassLibrary.Employee.Request;
-using NextDoorBackend.ClassLibrary.Employee.Response;
 using NextDoorBackend.ClassLibrary.MasterData.Request;
 using NextDoorBackend.ClassLibrary.MasterData.Response;
 using NextDoorBackend.Data;
 using NextDoorBackend.SDK.Entities;
 
-namespace NextDoorBackend.Business.Employee
+namespace NextDoorBackend.Business.MasterData
 {
     public class MasterDataInteractions : IMasterDataInteractions
     {
@@ -53,7 +51,6 @@ namespace NextDoorBackend.Business.Employee
 
             if (businessCategoryEntity == null)
             {
-                // Employee doesn't exist, insert new employee
                 var newBusinessCategoryEntity  = new BusinessCategoriesEntity
                 {
                     Id = Guid.NewGuid(),
@@ -72,7 +69,7 @@ namespace NextDoorBackend.Business.Employee
             }
             else
             {
-                // Employee exists, update the employee
+            
                 businessCategoryEntity.CategoryName = request.CategoryName;
                 businessCategoryEntity.CategoryDescription = request.CategoryDescription;
                 businessCategoryEntity.CategorySubType = request.CategorySubType;
@@ -92,7 +89,7 @@ namespace NextDoorBackend.Business.Employee
 
             if (genderEntity == null)
             {
-                // Employee doesn't exist, insert new employee
+              
                 var newGenderEntity = new GendersEntity
                 {
                     Id = Guid.NewGuid(),
@@ -110,7 +107,7 @@ namespace NextDoorBackend.Business.Employee
             }
             else
             {
-                // Employee exists, update the employee
+               
                 genderEntity.GenderName = request.GenderName;
              
 
@@ -120,43 +117,6 @@ namespace NextDoorBackend.Business.Employee
                 return new UpsertGenderResponse
                 {
                     Id = genderEntity.Id
-                };
-            }
-        }
-        public async Task<UpsertEmployeeResponse> UpsertEmployee(UpsertEmployeeRequest request)
-        {
-            var employeeEntity = await _context.Employees.FirstOrDefaultAsync(e => e.Id == request.Id);
-
-            if (employeeEntity == null)
-            {
-                // Employee doesn't exist, insert new employee
-                var newEmployeeEntity = new EmployeeEntity
-                {
-                    Id = Guid.NewGuid(),
-                    Name = request.Name,
-                    Title = request.Title
-                };
-
-                _context.Employees.Add(newEmployeeEntity);
-                await _context.SaveChangesAsync();
-
-                return new UpsertEmployeeResponse
-                {
-                    Id = newEmployeeEntity.Id
-                };
-            }
-            else
-            {
-                // Employee exists, update the employee
-                employeeEntity.Name = request.Name;
-                employeeEntity.Title = request.Title;
-
-                _context.Employees.Update(employeeEntity);
-                await _context.SaveChangesAsync();
-
-                return new UpsertEmployeeResponse
-                {
-                    Id = employeeEntity.Id
                 };
             }
         }
