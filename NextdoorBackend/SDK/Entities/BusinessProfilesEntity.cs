@@ -14,6 +14,8 @@ namespace NextDoorBackend.SDK.Entities
         [ForeignKey("NeighborhoodId")]
         public int? NeighborhoodId { get; set; }
         public virtual NeighborhoodEntity Neighborhood { get; set; }
+        public double? Latitude { get; set; }
+        public double? Longitude { get; set; }
 
         public string? Email { get; set; }
         public string? Website { get; set; }
