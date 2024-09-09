@@ -232,5 +232,31 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "NextDoorBackend.Controller.ProfileController",
+    "Method": "UpdateIndividualProfile",
+    "RelativePath": "api/Profile/UpdateIndividualProfile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDto",
+        "Type": "NextDoorBackend.ClassLibrary.Profile.Request.UpdateIndividualProfileRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NextDoorBackend.ClassLibrary.Common.BaseResponseDto\u00601[[NextDoorBackend.ClassLibrary.Profile.Response.UpdateIndividualProfileResponse, NextDoorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]
