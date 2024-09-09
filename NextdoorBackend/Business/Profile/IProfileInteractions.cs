@@ -6,5 +6,6 @@ namespace NextDoorBackend.Business.Profile
     public interface IProfileInteractions
     {
         Task<UpdateIndividualProfileResponse> UpdateIndividualProfile(UpdateIndividualProfileRequest request);
+        Task<GetIndividualProfileByAccountIdResponse> GetIndividualProfileByAccountId(GetIndividualProfileByAccountIdRequest request);
     }
 }

@@ -1,9 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Mapster;
+using Microsoft.EntityFrameworkCore;
 using NextDoorBackend.ClassLibrary.MasterData.Response;
 using NextDoorBackend.ClassLibrary.Profile.Request;
 using NextDoorBackend.ClassLibrary.Profile.Response;
 using NextDoorBackend.Data;
 using System.Net.Http;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace NextDoorBackend.Business.Profile
 {
@@ -50,6 +52,20 @@ namespace NextDoorBackend.Business.Profile
 
             // Return null or handle the case where the profile wasn't found
             return null;
+        }
+        public async Task<GetIndividualProfileByAccountIdResponse> GetIndividualProfileByAccountId(GetIndividualProfileByAccountIdRequest request)
+        {
+            var account = await _context.Accounts
+        .Include(a => a.Profiles)
+        .ThenInclude(p => p.IndividualProfile)
+        .FirstOrDefaultAsync(a => a.Id == request.AccountId && a.Profiles.Any(p => p.ProfileType == "0"));
+
+            var individualProfile = account.Profiles
+     .FirstOrDefault(p => p.ProfileType == "0")?
+     .IndividualProfile;
+
+            var response = individualProfile.Adapt<GetIndividualProfileByAccountIdResponse>();
+            return response;
         }
     }
 }

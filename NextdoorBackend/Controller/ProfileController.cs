@@ -34,5 +34,18 @@ namespace NextDoorBackend.Controller
                 return BaseResponseDto<UpdateIndividualProfileResponse>.Fail($"Internal server error: {ex.Message}");
             }
         }
+        [HttpGet("GetIndividualProfileByAccountId")]
+        public async Task<BaseResponseDto<GetIndividualProfileByAccountIdResponse>> GetIndividualProfileByAccountId([FromQuery] GetIndividualProfileByAccountIdRequest requestDto)
+        {
+            try
+            {
+                var response = await _profileInteractions.GetIndividualProfileByAccountId(requestDto);
+                return BaseResponseDto<GetIndividualProfileByAccountIdResponse>.Success(response);
+            }
+            catch (Exception ex)
+            {
+                return BaseResponseDto<GetIndividualProfileByAccountIdResponse>.Fail($"Internal server error: {ex.Message}");
+            }
+        }
     }
 }
