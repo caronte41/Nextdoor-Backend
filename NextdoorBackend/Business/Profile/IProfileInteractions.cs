@@ -8,5 +8,7 @@ namespace NextDoorBackend.Business.Profile
         Task<UpdateIndividualProfileResponse> UpdateIndividualProfile(UpdateIndividualProfileRequest request);
         Task<GetIndividualProfileByAccountIdResponse> GetIndividualProfileByAccountId(GetIndividualProfileByAccountIdRequest request);
         Task<UpsertBusinessProfileResponse> UpsertBusinessProfile(UpsertBusinessProfileRequest request);
+        Task<UpsertBusinessProfileRequest> GetBusinessProfileByAccountId(GetIndividualProfileByAccountIdRequest request);
+        Task<List<UpsertBusinessProfileRequest>> GetAllBusinessProfiles();
     }
 }

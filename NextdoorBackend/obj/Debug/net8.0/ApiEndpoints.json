@@ -235,6 +235,52 @@
   },
   {
     "ContainingType": "NextDoorBackend.Controller.ProfileController",
+    "Method": "GetAllBusinessProfiles",
+    "RelativePath": "api/Profile/GetAllBusinessProfiles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "NextDoorBackend.ClassLibrary.Common.BaseResponseDto\u00601[[System.Collections.Generic.List\u00601[[NextDoorBackend.ClassLibrary.Profile.Request.UpsertBusinessProfileRequest, NextDoorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NextDoorBackend.Controller.ProfileController",
+    "Method": "GetBusinessProfileByAccountId",
+    "RelativePath": "api/Profile/GetBusinessProfileByAccountId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AccountId",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NextDoorBackend.ClassLibrary.Common.BaseResponseDto\u00601[[NextDoorBackend.ClassLibrary.Profile.Request.UpsertBusinessProfileRequest, NextDoorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NextDoorBackend.Controller.ProfileController",
     "Method": "GetIndividualProfileByAccountId",
     "RelativePath": "api/Profile/GetIndividualProfileByAccountId",
     "HttpMethod": "GET",

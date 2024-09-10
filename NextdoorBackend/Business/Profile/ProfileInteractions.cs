@@ -74,7 +74,7 @@ namespace NextDoorBackend.Business.Profile
         {
             var accountEntity = await _context.Accounts
                .Include(a => a.Profiles)
-               .ThenInclude(p => p.BusinessProfile) // Changed to BusinessProfile instead of IndividualProfile
+               .ThenInclude(p => p.BusinessProfile) 
                .FirstOrDefaultAsync(a => a.Id == request.AccountId && a.Profiles.Any(p => p.ProfileType == "1"));
 
             var neighborhoodId = await _googleMapsInteractions.GetNeighborhoodIdByLatLng(request.Latitude, request.Longitude);
@@ -153,7 +153,26 @@ namespace NextDoorBackend.Business.Profile
             };
         }
 
+        public async Task<UpsertBusinessProfileRequest> GetBusinessProfileByAccountId(GetIndividualProfileByAccountIdRequest request)
+        {
+            var account = await _context.Accounts
+        .Include(a => a.Profiles)
+        .ThenInclude(p => p.BusinessProfile)
+        .FirstOrDefaultAsync(a => a.Id == request.AccountId && a.Profiles.Any(p => p.ProfileType == "1"));
 
+            var businessProfile = account.Profiles
+     .FirstOrDefault(p => p.ProfileType == "1")?
+     .BusinessProfile;
+
+            var response = businessProfile.Adapt<UpsertBusinessProfileRequest>();
+            return response;
+        }
+        public async Task<List<UpsertBusinessProfileRequest>> GetAllBusinessProfiles()
+        {
+            var data = await _context.BusinessProfiles.ToListAsync();
+            var response = data.Adapt<List<UpsertBusinessProfileRequest>>();
+            return response;
+        }
 
     }
 }
