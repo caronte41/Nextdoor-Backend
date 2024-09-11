@@ -1,4 +1,5 @@
-﻿using NextDoorBackend.ClassLibrary.Profile.Request;
+﻿using NextDoorBackend.ClassLibrary.Common;
+using NextDoorBackend.ClassLibrary.Profile.Request;
 using NextDoorBackend.ClassLibrary.Profile.Response;
 
 namespace NextDoorBackend.Business.Profile
@@ -9,6 +10,6 @@ namespace NextDoorBackend.Business.Profile
         Task<GetIndividualProfileByAccountIdResponse> GetIndividualProfileByAccountId(GetIndividualProfileByAccountIdRequest request);
         Task<UpsertBusinessProfileResponse> UpsertBusinessProfile(UpsertBusinessProfileRequest request);
         Task<UpsertBusinessProfileRequest> GetBusinessProfileByAccountId(GetIndividualProfileByAccountIdRequest request);
-        Task<List<UpsertBusinessProfileRequest>> GetAllBusinessProfiles();
+        Task<List<UpsertBusinessProfileRequest>> GetAllBusinessProfiles(BaseRequest request);
     }
 }

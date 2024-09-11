@@ -20,5 +20,6 @@ namespace NextDoorBackend.ClassLibrary.Profile.Request
         public string? BusinessStatus { get; set; }
         public Guid[]? CategoryId { get; set; }
         public string? About { get; set; }
+        public bool? UserAddedToFavorite { get; set; }
     }
 }

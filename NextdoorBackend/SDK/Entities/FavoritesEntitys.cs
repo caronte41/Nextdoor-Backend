@@ -13,10 +13,7 @@ namespace NextDoorBackend.SDK.Entities
 
         [ForeignKey("BusinessProfileId")]
         public Guid? BusinessProfileId { get; set; }
-
         public DateTime? FavoritedAt { get; set; }
-
-        // Navigation properties
         public virtual ProfilesEntity Profile { get; set; }
         public virtual BusinessProfilesEntity BusinessProfile { get; set; }
     }

@@ -1,6 +1,7 @@
 ﻿using Mapster;
 using Microsoft.EntityFrameworkCore;
 using NextDoorBackend.Business.GoogleMaps;
+using NextDoorBackend.ClassLibrary.Common;
 using NextDoorBackend.ClassLibrary.MasterData.Response;
 using NextDoorBackend.ClassLibrary.Profile.Request;
 using NextDoorBackend.ClassLibrary.Profile.Response;
@@ -167,10 +168,24 @@ namespace NextDoorBackend.Business.Profile
             var response = businessProfile.Adapt<UpsertBusinessProfileRequest>();
             return response;
         }
-        public async Task<List<UpsertBusinessProfileRequest>> GetAllBusinessProfiles()
+        public async Task<List<UpsertBusinessProfileRequest>> GetAllBusinessProfiles(BaseRequest request)
         {
             var data = await _context.BusinessProfiles.ToListAsync();
-            var response = data.Adapt<List<UpsertBusinessProfileRequest>>();
+
+            // Get the list of business IDs that the current user has favorited
+            var favoritedBusinessIds = await _context.Favorites
+                .Where(f => f.ProfileId == request.profileId)
+                .Select(f => f.BusinessProfileId)
+                .ToListAsync();
+
+            // Map and set the UserAddedToFavorite flag
+            var response = data.Select(business =>
+            {
+                var businessDto = business.Adapt<UpsertBusinessProfileRequest>();
+                businessDto.UserAddedToFavorite = favoritedBusinessIds.Contains(business.Id);
+                return businessDto;
+            }).ToList();
+
             return response;
         }
 

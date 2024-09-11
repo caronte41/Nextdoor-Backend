@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using NextDoorBackend.Business.Account;
 using NextDoorBackend.Business.Employee;
+using NextDoorBackend.Business.Favorite;
 using NextDoorBackend.Business.GoogleMaps;
 using NextDoorBackend.Business.MasterData;
 using NextDoorBackend.Business.Profile;
@@ -24,6 +25,7 @@ builder.Services.AddScoped<IMasterDataInteractions, MasterDataInteractions>();
 builder.Services.AddHttpClient<IGoogleMapsInteractions, GoogleMapsInteractions>();
 builder.Services.AddScoped<IAccountInteractions, AccountInteractions>();
 builder.Services.AddScoped<IProfileInteractions, ProfileInteractions>();
+builder.Services.AddScoped<IFavoritesInteractions, FavoritesInteractions>();
 
 var app = builder.Build();
 

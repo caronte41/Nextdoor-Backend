@@ -74,11 +74,11 @@ namespace NextDoorBackend.Controller
             }
         }
         [HttpGet("GetAllBusinessProfiles")]
-        public async Task<BaseResponseDto<List<UpsertBusinessProfileRequest>>> GetAllBusinessProfiles()
+        public async Task<BaseResponseDto<List<UpsertBusinessProfileRequest>>> GetAllBusinessProfiles(BaseRequest request)
         {
             try
             {
-                var response = await _profileInteractions.GetAllBusinessProfiles();
+                var response = await _profileInteractions.GetAllBusinessProfiles(request);
                 return BaseResponseDto<List<UpsertBusinessProfileRequest>>.Success(response);
             }
             catch (Exception ex)
