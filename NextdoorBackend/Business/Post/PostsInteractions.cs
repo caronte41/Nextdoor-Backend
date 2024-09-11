@@ -51,7 +51,6 @@ namespace NextDoorBackend.Business.Post
 
             PostsEntity post;
 
-            // If Id is provided, try to find the existing post
             if (request.Id.HasValue)
             {
                 post = await _context.Posts
@@ -59,7 +58,6 @@ namespace NextDoorBackend.Business.Post
 
                 if (post != null)
                 {
-                    // Update the existing post
                     post.Summary = request.Summary;
                     post.PhotoUrl = request.PhotoData != null ? await _masterDataInteractions.SaveFile(request.PhotoData, "photos") : post.PhotoUrl;
                     post.VideoUrl = request.VideoData != null ? await _masterDataInteractions.SaveFile(request.VideoData, "videos") : post.VideoUrl;
@@ -70,7 +68,6 @@ namespace NextDoorBackend.Business.Post
                 }
                 else
                 {
-                    // If no matching post was found, create a new one
                     post = new PostsEntity
                     {
                         Id = Guid.NewGuid(),
@@ -87,7 +84,6 @@ namespace NextDoorBackend.Business.Post
             }
             else
             {
-                // If no Id is provided, create a new post
                 post = new PostsEntity
                 {
                     Id = Guid.NewGuid(),
@@ -102,7 +98,6 @@ namespace NextDoorBackend.Business.Post
                 await _context.Posts.AddAsync(post);
             }
 
-            // Save changes to the database
             await _context.SaveChangesAsync();
 
             return new UpsertPostResponse
@@ -133,6 +128,15 @@ namespace NextDoorBackend.Business.Post
                   .ToListAsync();
 
             return post.Adapt<List<GetPostResponse>>();
+        }
+        public async Task DeletePost(GetPostByPostIdRequest request)
+        {
+            var post = await _context.Posts
+        .FirstOrDefaultAsync(p => p.Id == request.PostId);
+
+            _context.Posts.Remove(post);
+
+            await _context.SaveChangesAsync();
         }
 
     }

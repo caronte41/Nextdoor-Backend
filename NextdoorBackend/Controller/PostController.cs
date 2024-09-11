@@ -73,5 +73,18 @@ namespace NextDoorBackend.Controller
                 return BaseResponseDto<List<GetPostResponse>>.Fail($"Internal server error: {ex.Message}");
             }
         }
+        [HttpDelete("DeletePost")]
+        public async Task<BaseResponseDto<DeletePostResponse>> DeletePost([FromRoute] GetPostByPostIdRequest requestDto)
+        {
+            try
+            {
+                 await _postInteractions.DeletePost(requestDto);
+                return BaseResponseDto<DeletePostResponse>.Success();
+            }
+            catch (Exception ex)
+            {
+                return BaseResponseDto<DeletePostResponse>.Fail($"Internal server error: {ex.Message}");
+            }
+        }
     }
 }
