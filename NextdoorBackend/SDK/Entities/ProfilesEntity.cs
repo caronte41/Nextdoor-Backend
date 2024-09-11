@@ -13,5 +13,7 @@ namespace NextDoorBackend.SDK.Entities
         public virtual AccountsEntity Account { get; set; }
         public virtual IndividualProfilesEntity IndividualProfile { get; set; }
         public virtual BusinessProfilesEntity BusinessProfile { get; set; }
+        public virtual ICollection<FavoritesEntitys> Favorites { get; set; }
+        public virtual ICollection<EventsEntity> Events { get; set; }
     }
 }

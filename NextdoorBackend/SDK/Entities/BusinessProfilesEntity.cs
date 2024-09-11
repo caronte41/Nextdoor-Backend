@@ -30,5 +30,6 @@ namespace NextDoorBackend.SDK.Entities
         public string? About { get; set; }
 
         public virtual ProfilesEntity Profile { get; set; }
+        public virtual ICollection<FavoritesEntitys> Favorites { get; set; }
     }
 }
