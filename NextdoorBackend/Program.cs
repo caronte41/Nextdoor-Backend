@@ -4,6 +4,7 @@ using NextDoorBackend.Business.Employee;
 using NextDoorBackend.Business.Favorite;
 using NextDoorBackend.Business.GoogleMaps;
 using NextDoorBackend.Business.MasterData;
+using NextDoorBackend.Business.Post;
 using NextDoorBackend.Business.Profile;
 using NextDoorBackend.Data;  // Adjust the namespace based on your project structure
 
@@ -26,6 +27,7 @@ builder.Services.AddHttpClient<IGoogleMapsInteractions, GoogleMapsInteractions>(
 builder.Services.AddScoped<IAccountInteractions, AccountInteractions>();
 builder.Services.AddScoped<IProfileInteractions, ProfileInteractions>();
 builder.Services.AddScoped<IFavoritesInteractions, FavoritesInteractions>();
+builder.Services.AddScoped<IPostsInteractions, PostsInteractions>();
 
 var app = builder.Build();
 

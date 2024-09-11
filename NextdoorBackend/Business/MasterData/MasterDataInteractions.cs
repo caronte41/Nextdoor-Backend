@@ -120,6 +120,18 @@ namespace NextDoorBackend.Business.MasterData
                 };
             }
         }
+        public async Task<string> SaveFile(byte[] fileData, string folderName)
+        {
+            var fileName = $"{Guid.NewGuid()}.jpg"; // Or .mp4 for videos
+            var filePath = Path.Combine("wwwroot", folderName, fileName);
+
+            Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+
+            await Task.Run(() => File.WriteAllBytes(filePath, fileData));
+
+            return $"/{folderName}/{fileName}";
+        }
+
 
     }
 }

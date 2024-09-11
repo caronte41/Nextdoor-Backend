@@ -11,5 +11,6 @@ namespace NextDoorBackend.Business.MasterData
         Task<GetBusinessCategoryByIdResponse> GetBusinessCategoryById(GetBusinessCategoryByIdRequest request);
         Task<List<GetGendersResponse>> GetAllGenders(GetGendersRequest request);
         Task<List<GetBusinessCategoriesResponse>> GetAllBusinessCategories(GetBusinessCategoriesRequest request);
+        Task<string> SaveFile(byte[] fileData, string folderName);
     }
 }

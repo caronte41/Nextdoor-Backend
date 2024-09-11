@@ -245,6 +245,22 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\photos\\17f3e143-6f12-4c99-99fa-6443e2eac934.jpg",
+      "PackagePath": "staticwebassets\\photos\\17f3e143-6f12-4c99-99fa-6443e2eac934.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\photos\\21321c8e-dc30-4eed-8a2c-3e341ad31361.jpg",
+      "PackagePath": "staticwebassets\\photos\\21321c8e-dc30-4eed-8a2c-3e341ad31361.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\photos\\3e323a8e-4a4d-460b-8a6d-7ca3f1faa1f1.jpg",
+      "PackagePath": "staticwebassets\\photos\\3e323a8e-4a4d-460b-8a6d-7ca3f1faa1f1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\photos\\e9923d3e-c593-4ad4-897d-cf9c48814be1.jpg",
+      "PackagePath": "staticwebassets\\photos\\e9923d3e-c593-4ad4-897d-cf9c48814be1.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.NextDoorBackend.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
