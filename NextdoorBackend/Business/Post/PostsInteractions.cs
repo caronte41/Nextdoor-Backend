@@ -1,11 +1,15 @@
 ﻿using Mapster;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Hosting;
 using NextDoorBackend.Business.MasterData;
+using NextDoorBackend.ClassLibrary.Favorite.Response;
 using NextDoorBackend.ClassLibrary.Post.Request;
 using NextDoorBackend.ClassLibrary.Post.Response;
 using NextDoorBackend.ClassLibrary.Profile.Request;
 using NextDoorBackend.Data;
 using NextDoorBackend.SDK.Entities;
+using Npgsql;
 
 namespace NextDoorBackend.Business.Post
 {
@@ -108,26 +112,104 @@ namespace NextDoorBackend.Business.Post
         public async Task<GetPostResponse> GetPostByPostId(GetPostByPostIdRequest request) 
         {
             var post = await _context.Posts
-           .Where(f => f.Id == request.PostId)
+           .Where(f => f.Id == request.PostId).Include(p => p.Comments)
            .FirstOrDefaultAsync(); 
 
             return post.Adapt<GetPostResponse>();
         }
         public async Task<List<GetPostResponse>> GetPostsByProfileId(GetPostsByProfileIdRequest request) 
         {
-            var post = await _context.Posts
-              .Where(f => f.ProfileId == request.ProfileId)
-              .ToListAsync();
+            var query = _context.Posts
+         .Include(p => p.Comments)
+         .Include(p => p.Likes)
+         .AsQueryable();
 
-            return post.Adapt<List<GetPostResponse>>();
+            // Apply filters based on the flow type
+            switch (request.FlowType)
+            {
+                case "Recent":
+                    // Order by CreatedAt, newest first
+                    query = query.OrderByDescending(p => p.CreatedAt);
+                    break;
+
+                case "Nearby":
+                    // Make sure ProfileId is provided to fetch the user's neighborhood
+                    if (request.ProfileId.HasValue)
+                    {
+                        // Get the user's neighborhood
+                        var userNeighborhoodId = await _context.IndividualProfiles
+                            .FirstOrDefaultAsync(ip => ip.Id == request.ProfileId.Value);
+
+                        if (userNeighborhoodId != null)
+                        {
+                            // Get the user's neighborhood geometry
+                            var userNeighborhood = await _context.Neighborhoods
+                                .Where(n => n.Id == userNeighborhoodId.NeighborhoodId.Value)
+                                .Select(n => n.Geometry)
+                                .FirstOrDefaultAsync();
+
+                            if (userNeighborhood != null)
+                            {
+                                // Order by distance to the user's neighborhood
+                                var sqlQuery = @"
+                                           SELECT p.*
+                                           FROM ""Posts"" p
+                                           JOIN ""Neighborhoods"" pn ON p.""NeighborhoodId"" = pn.""Id""
+                                           JOIN ""Neighborhoods"" un ON un.""Id"" = (
+                                           SELECT ""NeighborhoodId""
+                                           FROM ""IndividualProfiles"" ip
+                                           WHERE ip.""Id"" = @userProfileId
+                                                  )
+                                                  WHERE ST_Distance(pn.""Geometry"", un.""Geometry"") < @distanceThreshold
+                                                  ORDER BY ST_Distance(pn.""Geometry"",un.""Geometry"")
+                                           ";
+
+                                var userProfileIdParam = new NpgsqlParameter("@userProfileId", NpgsqlTypes.NpgsqlDbType.Uuid) { Value = request.ProfileId.Value };
+                                var distanceThresholdParam = new NpgsqlParameter("@distanceThreshold", NpgsqlTypes.NpgsqlDbType.Integer) { Value = 10000 }; // Adjust as needed
+
+                                query = _context.Posts
+                                    .FromSqlRaw(sqlQuery, userProfileIdParam, distanceThresholdParam).Include(p => p.Comments).Include(p => p.Likes).AsQueryable();
+                            }
+                        }
+                    }
+                    break;
+
+                case "Trending":
+                    // Order by combined likes and comments count
+                    query = query.OrderByDescending(p => (p.Likes.Count + p.Comments.Count));
+                    break;
+
+                default:
+                    throw new ArgumentException("Invalid flow type.");
+            }
+
+            // Execute the query and adapt the results
+            var posts = await query.ToListAsync();
+
+            var postResponses = posts.Select(post => {
+                var response = post.Adapt<GetPostResponse>();
+                var likesList = post.Likes ?? new List<PostLikesEntity>();
+                response.LikesCount = likesList.Count;
+                response.UserLiked = likesList.Any(like => like.ProfileId == request.ProfileId);
+                return response;
+            }).ToList();
+
+            return postResponses;
         }
         public async Task<List<GetPostResponse>> GetAllPostsByNeighborhoodId(GetAllPostsByNeighborhoodIdRequest request) 
         {
-            var post = await _context.Posts
-                  .Where(f => f.NeighborhoodId == request.NeighborhoodId)
+            var posts = await _context.Posts
+                  .Where(f => f.NeighborhoodId == request.NeighborhoodId).Include(p => p.Comments).Include(p => p.Likes)
                   .ToListAsync();
 
-            return post.Adapt<List<GetPostResponse>>();
+            var postResponses = posts.Select(post => {
+                var response = post.Adapt<GetPostResponse>();
+                response.LikesCount = post.Likes.Count;
+                response.UserLiked = post.Likes.Any(like => like.ProfileId == request.ProfileId);
+                return response;
+            }).ToList();
+
+            return postResponses;
         }
         public async Task DeletePost(GetPostByPostIdRequest request)
         {
@@ -137,6 +219,56 @@ namespace NextDoorBackend.Business.Post
             _context.Posts.Remove(post);
 
             await _context.SaveChangesAsync();
+        }
+        public async Task<AddCommentResponse> AddComment(AddCommentRequest request)
+        {
+            PostCommentsEntity comment;
+
+            comment = new PostCommentsEntity
+            {
+                Id = Guid.NewGuid(),
+                ProfileId = request.ProfileId.Value,
+                PostId = request.PostId.Value,
+                Comment = request.Comment,
+                CommentedAt = request.CommentedAt ?? DateTime.UtcNow,
+            };
+
+            await _context.PostComments.AddAsync(comment);
+
+            await _context.SaveChangesAsync();
+
+            return new AddCommentResponse 
+            {
+                Id = comment.Id,
+            };
+        }
+        public async Task<AddPostLikeResponse> AddOrRemovePostLike(AddPostLikeRequest request)
+        {
+            var existingPostLike = await _context.PostLikes
+             .FirstOrDefaultAsync(f => f.ProfileId == request.ProfileId && f.Id == request.Id);
+
+            if (existingPostLike != null)
+            {
+                _context.PostLikes.Remove(existingPostLike);
+            }
+            else
+            {
+                var newPostLike = new PostLikesEntity
+                {
+                    Id = Guid.NewGuid(),
+                    ProfileId = request.ProfileId.Value,
+                    PostId = request.PostId.Value,
+                    LikedAt = request.LikedAt ?? DateTime.UtcNow,
+                };
+
+                await _context.PostLikes.AddAsync(newPostLike);
+            }
+
+            await _context.SaveChangesAsync();
+            return new AddPostLikeResponse
+            {
+               
+            };
         }
 
     }

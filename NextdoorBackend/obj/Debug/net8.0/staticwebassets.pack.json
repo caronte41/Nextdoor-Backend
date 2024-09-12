@@ -261,6 +261,10 @@
       "PackagePath": "staticwebassets\\photos\\e9923d3e-c593-4ad4-897d-cf9c48814be1.jpg"
     },
     {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\photos\\f5bcc124-4d15-46cb-959e-bcdf8260ce4c.jpg",
+      "PackagePath": "staticwebassets\\photos\\f5bcc124-4d15-46cb-959e-bcdf8260ce4c.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.NextDoorBackend.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

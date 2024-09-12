@@ -323,6 +323,78 @@
   },
   {
     "ContainingType": "NextDoorBackend.Controller.PostController",
+    "Method": "AddComment",
+    "RelativePath": "api/Post/AddComment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDto",
+        "Type": "NextDoorBackend.ClassLibrary.Post.Request.AddCommentRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NextDoorBackend.ClassLibrary.Common.BaseResponseDto\u00601[[NextDoorBackend.ClassLibrary.Post.Response.AddCommentResponse, NextDoorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NextDoorBackend.Controller.PostController",
+    "Method": "AddOrRemovePostLike",
+    "RelativePath": "api/Post/AddOrRemovePostLike",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDto",
+        "Type": "NextDoorBackend.ClassLibrary.Post.Request.AddPostLikeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NextDoorBackend.ClassLibrary.Common.BaseResponseDto\u00601[[NextDoorBackend.ClassLibrary.Post.Response.AddPostLikeResponse, NextDoorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NextDoorBackend.Controller.PostController",
+    "Method": "DeletePost",
+    "RelativePath": "api/Post/DeletePost",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "NextDoorBackend.ClassLibrary.Common.BaseResponseDto\u00601[[NextDoorBackend.ClassLibrary.Post.Response.DeletePostResponse, NextDoorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NextDoorBackend.Controller.PostController",
     "Method": "GetAllPostsByNeighborhoodId",
     "RelativePath": "api/Post/GetAllPostsByNeighborhoodId",
     "HttpMethod": "GET",
@@ -332,6 +404,11 @@
       {
         "Name": "NeighborhoodId",
         "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "ProfileId",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       }
     ],
@@ -384,6 +461,21 @@
       {
         "Name": "ProfileId",
         "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "FlowType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserLatitude",
+        "Type": "System.Nullable\u00601[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserLongitude",
+        "Type": "System.Nullable\u00601[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       }
     ],

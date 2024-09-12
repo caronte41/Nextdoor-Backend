@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/mlpvDH1FkvyTpCO9pCbB1+tjyLgd3EHtNuDvxpVRZg=",
+  "Hash": "gdQQm0LLCFzqiKfnQlD0yLuAB41WlAw2zTP6nVpD+j4=",
   "Source": "NextDoorBackend",
   "BasePath": "_content/NextDoorBackend",
   "Mode": "Default",
@@ -1269,6 +1269,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\photos\\e9923d3e-c593-4ad4-897d-cf9c48814be1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\photos\\f5bcc124-4d15-46cb-959e-bcdf8260ce4c.jpg",
+      "SourceId": "NextDoorBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "BasePath": "_content/NextDoorBackend",
+      "RelativePath": "photos/f5bcc124-4d15-46cb-959e-bcdf8260ce4c.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\f5bcc124-4d15-46cb-959e-bcdf8260ce4c.jpg"
     }
   ]
 }

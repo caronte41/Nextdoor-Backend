@@ -86,5 +86,31 @@ namespace NextDoorBackend.Controller
                 return BaseResponseDto<DeletePostResponse>.Fail($"Internal server error: {ex.Message}");
             }
         }
+        [HttpPost("AddComment")]
+        public async Task<BaseResponseDto<AddCommentResponse>> AddComment(AddCommentRequest requestDto)
+        {
+            try
+            {
+                var response = await _postInteractions.AddComment(requestDto);
+                return BaseResponseDto<AddCommentResponse>.Success(response);
+            }
+            catch (Exception ex)
+            {
+                return BaseResponseDto<AddCommentResponse>.Fail($"Internal server error: {ex.Message}");
+            }
+        }
+        [HttpPost("AddOrRemovePostLike")]
+        public async Task<BaseResponseDto<AddPostLikeResponse>> AddOrRemovePostLike(AddPostLikeRequest requestDto)
+        {
+            try
+            {
+                var response = await _postInteractions.AddOrRemovePostLike(requestDto);
+                return BaseResponseDto<AddPostLikeResponse>.Success(response);
+            }
+            catch (Exception ex)
+            {
+                return BaseResponseDto<AddPostLikeResponse>.Fail($"Internal server error: {ex.Message}");
+            }
+        }
     }
 }

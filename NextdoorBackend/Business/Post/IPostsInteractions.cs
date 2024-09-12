@@ -10,5 +10,7 @@ namespace NextDoorBackend.Business.Post
         Task<List<GetPostResponse>>GetPostsByProfileId(GetPostsByProfileIdRequest request);
         Task<List<GetPostResponse>> GetAllPostsByNeighborhoodId(GetAllPostsByNeighborhoodIdRequest request);
         Task DeletePost(GetPostByPostIdRequest request);
+        Task<AddCommentResponse> AddComment(AddCommentRequest request);
+        Task<AddPostLikeResponse> AddOrRemovePostLike(AddPostLikeRequest request);
     }
 }
