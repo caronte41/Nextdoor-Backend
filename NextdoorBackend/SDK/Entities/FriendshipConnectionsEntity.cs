@@ -1,4 +1,4 @@
-﻿using NextDoorBackend.SDK.Entities;
+﻿ using NextDoorBackend.SDK.Entities;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;

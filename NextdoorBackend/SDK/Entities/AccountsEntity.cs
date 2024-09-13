@@ -13,5 +13,6 @@ namespace NextDoorBackend.SDK.Entities
 
         // Navigation property for related profiles
         public virtual ICollection<ProfilesEntity> Profiles { get; set; }
+        public virtual ICollection<NotificationsEntity> Notifications { get; set; }
     }
 }

@@ -46,6 +46,7 @@ namespace NextDoorBackend.Data
         public DbSet<FavoritesEntitys> Favorites { get; set; }
         public DbSet<EventsEntity> Events { get; set; }
         public DbSet<EventsParticipantsEntity> EventParticipants { get; set; }
+        public DbSet<NotificationsEntity> Notifications { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -80,6 +81,9 @@ namespace NextDoorBackend.Data
              .HasKey(p => p.Id);
             modelBuilder.Entity<EventsParticipantsEntity>()
              .HasKey(p => p.Id);
+            modelBuilder.Entity<NotificationsEntity>()
+             .HasKey(p => p.Id);
+
 
 
             modelBuilder.Entity<ProfilesEntity>()
@@ -189,6 +193,11 @@ namespace NextDoorBackend.Data
                 .WithMany(e => e.EventsParticipants)
                 .HasForeignKey(ep => ep.EventId)
                 .OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<NotificationsEntity>()
+    .HasOne(n => n.Account) // The navigation property in NotificationsEntity
+    .WithMany(a => a.Notifications) // Assuming AccountsEntity has a collection of Notifications
+    .HasForeignKey(n => n.AccountId) // The foreign key in NotificationsEntity
+    .OnDelete(DeleteBehavior.Cascade);
 
 
             base.OnModelCreating(modelBuilder);

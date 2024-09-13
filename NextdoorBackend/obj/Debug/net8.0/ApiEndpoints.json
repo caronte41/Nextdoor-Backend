@@ -166,6 +166,58 @@
     ]
   },
   {
+    "ContainingType": "NextDoorBackend.Controller.FriendshipConnectionController",
+    "Method": "RespondToFriendshipRequest",
+    "RelativePath": "api/FriendshipConnection/RespondToFriendshipRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDto",
+        "Type": "NextDoorBackend.ClassLibrary.FriendshipConnection.Request.RespondToFriendshipConnectionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NextDoorBackend.ClassLibrary.Common.BaseResponseDto\u00601[[NextDoorBackend.ClassLibrary.FriendshipConnection.Response.SendFriendshipConnectionResponse, NextDoorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NextDoorBackend.Controller.FriendshipConnectionController",
+    "Method": "SendFriendshipRequest",
+    "RelativePath": "api/FriendshipConnection/SendFriendshipRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDto",
+        "Type": "NextDoorBackend.ClassLibrary.FriendshipConnection.Request.SendFriendshipConnectionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NextDoorBackend.ClassLibrary.Common.BaseResponseDto\u00601[[NextDoorBackend.ClassLibrary.FriendshipConnection.Response.SendFriendshipConnectionResponse, NextDoorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "NextDoorBackend.Controllers.MasterDataController",
     "Method": "GetAllBusinessCategories",
     "RelativePath": "api/MasterData/GetAllBusinessCategories",
@@ -312,6 +364,32 @@
     "ReturnTypes": [
       {
         "Type": "NextDoorBackend.ClassLibrary.Common.BaseResponseDto\u00601[[NextDoorBackend.ClassLibrary.MasterData.Response.UpsertGenderResponse, NextDoorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NextDoorBackend.Controller.NotificaitonController",
+    "Method": "GetNotificationsByAccountId",
+    "RelativePath": "api/Notificaiton/GetNotificationsByAccountId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AccountId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NextDoorBackend.ClassLibrary.Common.BaseResponseDto\u00601[[System.Collections.Generic.List\u00601[[NextDoorBackend.ClassLibrary.Notification.Response.GetNotificationsByAccountIdResponse, NextDoorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

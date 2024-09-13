@@ -2,8 +2,10 @@ using Microsoft.EntityFrameworkCore;
 using NextDoorBackend.Business.Account;
 using NextDoorBackend.Business.Employee;
 using NextDoorBackend.Business.Favorite;
+using NextDoorBackend.Business.FriendshipConnection;
 using NextDoorBackend.Business.GoogleMaps;
 using NextDoorBackend.Business.MasterData;
+using NextDoorBackend.Business.Notification;
 using NextDoorBackend.Business.Post;
 using NextDoorBackend.Business.Profile;
 using NextDoorBackend.Data;  // Adjust the namespace based on your project structure
@@ -28,6 +30,8 @@ builder.Services.AddScoped<IAccountInteractions, AccountInteractions>();
 builder.Services.AddScoped<IProfileInteractions, ProfileInteractions>();
 builder.Services.AddScoped<IFavoritesInteractions, FavoritesInteractions>();
 builder.Services.AddScoped<IPostsInteractions, PostsInteractions>();
+builder.Services.AddScoped<IFriendshipConnectionInteractions, FriendshipConnectionInteractions>();
+builder.Services.AddScoped<INotificaitonInteractions, NotificaitonInteractions>();
 
 var app = builder.Build();
 
