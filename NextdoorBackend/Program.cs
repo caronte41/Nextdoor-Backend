@@ -1,6 +1,10 @@
 using Microsoft.EntityFrameworkCore;
+using Quartz;
+using Quartz.Impl;
+using Quartz.Spi;
 using NextDoorBackend.Business.Account;
 using NextDoorBackend.Business.Employee;
+using NextDoorBackend.Business.Event;
 using NextDoorBackend.Business.Favorite;
 using NextDoorBackend.Business.FriendshipConnection;
 using NextDoorBackend.Business.GoogleMaps;
@@ -32,6 +36,26 @@ builder.Services.AddScoped<IFavoritesInteractions, FavoritesInteractions>();
 builder.Services.AddScoped<IPostsInteractions, PostsInteractions>();
 builder.Services.AddScoped<IFriendshipConnectionInteractions, FriendshipConnectionInteractions>();
 builder.Services.AddScoped<INotificaitonInteractions, NotificaitonInteractions>();
+builder.Services.AddScoped<IEventInteractions, EventInteractions>();
+
+builder.Services.AddQuartz(q =>
+{
+    // Use a scoped job factory
+    q.UseMicrosoftDependencyInjectionJobFactory();
+
+    // Register the job and trigger
+    var jobKey = new JobKey("UpdateEventStatusJob");
+
+    q.AddJob<UpdateEventStatusJob>(opts => opts.WithIdentity(jobKey));
+
+    q.AddTrigger(opts => opts
+        .ForJob(jobKey)
+        .WithIdentity("UpdateEventStatusTrigger")
+        .WithCronSchedule("0 0 0 * * ?")); // Cron expression for daily execution at midnight
+});
+
+// Add Quartz hosted service to run the scheduler
+builder.Services.AddQuartzHostedService(q => q.WaitForJobsToComplete = true);
 
 var app = builder.Build();
 
