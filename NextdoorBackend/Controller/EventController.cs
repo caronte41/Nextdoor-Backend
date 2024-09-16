@@ -47,5 +47,31 @@ namespace NextDoorBackend.Controller
                 return BaseResponseDto<ChangeEventStatusResponse>.Fail($"Internal server error: {ex.Message}");
             }
         }
+        [HttpGet("GetEventByEventId")]
+        public async Task<BaseResponseDto<GetEventByEventIdResposne>> GetEventByEventId([FromQuery] GetEventByEventIdRequest requestDto)
+        {
+            try
+            {
+                var response = await _eventInteractions.GetEventByEventId(requestDto);
+                return BaseResponseDto<GetEventByEventIdResposne>.Success(response);
+            }
+            catch (Exception ex)
+            {
+                return BaseResponseDto<GetEventByEventIdResposne>.Fail($"Internal server error: {ex.Message}");
+            }
+        }
+        [HttpGet("GetAllEventsByProfileId")]
+        public async Task<BaseResponseDto<List<GetAllEventsByProfileIdResponse>>> GetAllEventsByProfileId([FromQuery] GetAllEventsByProfileIdRequest requestDto)
+        {
+            try
+            {
+                var response = await _eventInteractions.GetAllEventsByProfileId(requestDto);
+                return BaseResponseDto<List<GetAllEventsByProfileIdResponse>>.Success(response);
+            }
+            catch (Exception ex)
+            {
+                return BaseResponseDto<List<GetAllEventsByProfileIdResponse>>.Fail($"Internal server error: {ex.Message}");
+            }
+        }
     }
 }

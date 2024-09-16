@@ -9,5 +9,6 @@ namespace NextDoorBackend.Business.Event
         Task<ChangeEventStatusResponse> ChangeEventStatus(ChangeEventStatusRequest request);
         Task<GetEventByEventIdResposne> GetEventByEventId(GetEventByEventIdRequest request);
         Task<List<GetAllEventsByProfileIdResponse>> GetAllEventsByProfileId(GetAllEventsByProfileIdRequest request);
+        Task<AddParticipantToEventResposne> AddParticipantToEvent(AddParticipantToEventRequest request);
     }
 }

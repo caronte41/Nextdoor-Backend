@@ -19,7 +19,7 @@ namespace NextDoorBackend.SDK.Entities
 
         [ForeignKey("NeighborhoodId")]
         public int NeighborhoodId { get; set; }
-
+        public string Description { get; set; }
         public int Status { get; set; } // Enum or integer for event status
 
         // Navigation properties

@@ -1,7 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Mapster;
+using Microsoft.EntityFrameworkCore;
 using NextDoorBackend.Business.GoogleMaps;
 using NextDoorBackend.ClassLibrary.Event.Request;
 using NextDoorBackend.ClassLibrary.Event.Response;
+using NextDoorBackend.ClassLibrary.Post.Response;
 using NextDoorBackend.Data;
 using NextDoorBackend.SDK.Entities;
 using static NextDoorBackend.SDK.Enums.AllMyEnums;
@@ -61,6 +63,93 @@ namespace NextDoorBackend.Business.Event
             eventEntity.Status = (int)request.Status;
             await _context.SaveChangesAsync();
             return new ChangeEventStatusResponse { };
+        }
+        public async Task<GetEventByEventIdResposne> GetEventByEventId(GetEventByEventIdRequest request)
+        {
+            var eventEntity = await _context.Events
+       .Where(e => e.Id == request.EventId)
+       .Include(e => e.Profile) // Include the base Profile entity first
+       .Include(e => e.EventsParticipants) // Include participants for count
+       .FirstOrDefaultAsync();
+
+            if (eventEntity == null)
+            {
+                throw new Exception("Event not found");
+            }
+
+            // Check if the profile is associated with an IndividualProfile or BusinessProfile
+            var profileId = eventEntity.ProfileId;
+
+            // Check for IndividualProfile
+            var individualProfile = await _context.IndividualProfiles
+                .Where(ip => ip.Id == profileId)
+                .FirstOrDefaultAsync();
+
+            if (individualProfile != null)
+            {
+                eventEntity.Profile.IndividualProfile = individualProfile;
+            }
+            else
+            {
+                // Load BusinessProfile if IndividualProfile is not found
+                var businessProfile = await _context.BusinessProfiles
+                    .Where(bp => bp.Id == profileId)
+                    .FirstOrDefaultAsync();
+
+                if (businessProfile != null)
+                {
+                    eventEntity.Profile.BusinessProfile = businessProfile;
+                }
+            }
+
+            // Calculate Interested and Going counts
+            var interestedCount = eventEntity.EventsParticipants.Count(p => p.Status == ParticipationStatus.Interested);
+            var goingCount = eventEntity.EventsParticipants.Count(p => p.Status == ParticipationStatus.Going);
+
+            // Map the event entity to the response DTO, including the counts
+            var response = eventEntity.Adapt<GetEventByEventIdResposne>();
+
+            // Add the interested and going counts to the response
+            response.InterestedCount = interestedCount;
+            response.GoingCount = goingCount;
+
+            return response;
+        }
+        public async Task<List<GetAllEventsByProfileIdResponse>> GetAllEventsByProfileId(GetAllEventsByProfileIdRequest request)
+        {
+            var profile = await _context.Profiles
+       .Where(p => p.Id == request.ProfileId)
+       .Include(p => p.IndividualProfile) // Ensure you load IndividualProfile to access NeighborhoodId
+       .FirstOrDefaultAsync();
+
+            if (profile == null || profile.IndividualProfile == null)
+            {
+                throw new Exception("Profile or IndividualProfile not found");
+            }
+
+            var allEvents = await _context.Events
+                .Where(e => e.NeighborhoodId == profile.IndividualProfile.NeighborhoodId)
+                .Include(e => e.EventsParticipants) // Include participants to calculate counts
+                .Select(e => new GetAllEventsByProfileIdResponse
+                {
+                    Id = e.Id,
+                    EventName = e.EventName,
+                    OrganizatorName = e.OrganizatorName,
+                    EventDay = e.EventDay,
+                    EventHour = e.EventHour,
+                    Address = e.Address,
+                    NeighborhoodId = e.NeighborhoodId,
+                    // Calculate Interested and Going counts
+                    InterestedCount = e.EventsParticipants.Count(p => p.Status == ParticipationStatus.Interested),
+                    GoingCount = e.EventsParticipants.Count(p => p.Status == ParticipationStatus.Going)
+                })
+                .ToListAsync();
+
+            return allEvents;
+        }
+        public async Task<AddParticipantToEventResposne> AddParticipantToEvent(AddParticipantToEventRequest request)
+        {
+            var eventEntity = await _context.Events.Where(p => p.Id == request.EventId).FirstOrDefaultAsync();
         }
 
     }

@@ -2,5 +2,6 @@
 {
     public class GetAllEventsByProfileIdRequest
     {
+        public Guid? ProfileId { get; set; }
     }
 }

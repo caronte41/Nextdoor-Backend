@@ -79,6 +79,32 @@
   },
   {
     "ContainingType": "NextDoorBackend.Controller.EventController",
+    "Method": "ChangeEventStatus",
+    "RelativePath": "api/Event/ChangeEventStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDto",
+        "Type": "NextDoorBackend.ClassLibrary.Event.Request.ChangeEventStatusRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NextDoorBackend.ClassLibrary.Common.BaseResponseDto\u00601[[NextDoorBackend.ClassLibrary.Event.Response.ChangeEventStatusResponse, NextDoorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NextDoorBackend.Controller.EventController",
     "Method": "CreateEventAsync",
     "RelativePath": "api/Event/CreateEventAsync",
     "HttpMethod": "POST",
@@ -94,6 +120,58 @@
     "ReturnTypes": [
       {
         "Type": "NextDoorBackend.ClassLibrary.Common.BaseResponseDto\u00601[[NextDoorBackend.ClassLibrary.Event.Response.CreateEventResponse, NextDoorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NextDoorBackend.Controller.EventController",
+    "Method": "GetAllEventsByProfileId",
+    "RelativePath": "api/Event/GetAllEventsByProfileId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ProfileId",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NextDoorBackend.ClassLibrary.Common.BaseResponseDto\u00601[[System.Collections.Generic.List\u00601[[NextDoorBackend.ClassLibrary.Event.Response.GetAllEventsByProfileIdResponse, NextDoorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NextDoorBackend.Controller.EventController",
+    "Method": "GetEventByEventId",
+    "RelativePath": "api/Event/GetEventByEventId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EventId",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NextDoorBackend.ClassLibrary.Common.BaseResponseDto\u00601[[NextDoorBackend.ClassLibrary.Event.Response.GetEventByEventIdResposne, NextDoorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
