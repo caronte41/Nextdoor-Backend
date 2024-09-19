@@ -149,8 +149,43 @@ namespace NextDoorBackend.Business.Event
         }
         public async Task<AddParticipantToEventResposne> AddParticipantToEvent(AddParticipantToEventRequest request)
         {
-            var eventEntity = await _context.Events.Where(p => p.Id == request.EventId).FirstOrDefaultAsync();
+            var eventEntity = await _context.Events
+       .Where(p => p.Id == request.EventId)
+       .FirstOrDefaultAsync();
+
+            if (eventEntity == null)
+            {
+                throw new Exception("Event not found");
+            }
+
+            // Check if the participant already exists for this event
+            var existingParticipant = await _context.EventParticipants
+                .FirstOrDefaultAsync(p => p.EventId == request.EventId && p.ProfileId == request.ProfileId);
+
+            if (existingParticipant != null)
+            {
+                throw new Exception("Participant already exists for this event.");
+            }
+
+            // Create the new participant entity
+            var newParticipant = new EventsParticipantsEntity
+            {
+                Id = Guid.NewGuid(),
+                EventId = (Guid)request.EventId,
+                ProfileId = (Guid)request.ProfileId,
+                Status = (ParticipationStatus)(int)request.ParticipationStatus,
+                AttendedAt = DateTime.UtcNow
+            };
+
+            // Add the participant directly to the EventsParticipants table
+            _context.EventParticipants.Add(newParticipant);
+
+            // Save changes
+            await _context.SaveChangesAsync();
+
+            return new AddParticipantToEventResposne();
         }
+
 
     }
 }

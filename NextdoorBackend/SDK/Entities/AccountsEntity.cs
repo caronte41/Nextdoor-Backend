@@ -10,6 +10,8 @@ namespace NextDoorBackend.SDK.Entities
         public string? Email { get; set; }
         public string? Phone { get; set; }
         public string? Password { get; set; }
+        public string? VerificationToken { get; set; } 
+        public bool? IsVerified { get; set; } = false;
 
         // Navigation property for related profiles
         public virtual ICollection<ProfilesEntity> Profiles { get; set; }

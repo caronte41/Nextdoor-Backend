@@ -12,9 +12,34 @@ using NextDoorBackend.Business.MasterData;
 using NextDoorBackend.Business.Notification;
 using NextDoorBackend.Business.Post;
 using NextDoorBackend.Business.Profile;
-using NextDoorBackend.Data;  // Adjust the namespace based on your project structure
+using NextDoorBackend.Data;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using NextDoorBackend.Business.SystemJob;  // Adjust the namespace based on your project structure
 
 var builder = WebApplication.CreateBuilder(args);
+var jwtSettings = builder.Configuration.GetSection("JwtSettings");
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = jwtSettings["Issuer"],
+        ValidAudience = jwtSettings["Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["SecretKey"])),
+        ClockSkew = TimeSpan.Zero // Optional: to prevent token expiration issues due to time drift
+    };
+});
 
 // Add services to the container.
 builder.Services.AddControllers(); // Ensure this is present for API controllers
@@ -30,6 +55,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<IEmployeeInteractions, EmployeeInteractions>();
 builder.Services.AddScoped<IMasterDataInteractions, MasterDataInteractions>();
 builder.Services.AddHttpClient<IGoogleMapsInteractions, GoogleMapsInteractions>();
+builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<IAccountInteractions, AccountInteractions>();
 builder.Services.AddScoped<IProfileInteractions, ProfileInteractions>();
 builder.Services.AddScoped<IFavoritesInteractions, FavoritesInteractions>();
@@ -37,6 +64,7 @@ builder.Services.AddScoped<IPostsInteractions, PostsInteractions>();
 builder.Services.AddScoped<IFriendshipConnectionInteractions, FriendshipConnectionInteractions>();
 builder.Services.AddScoped<INotificaitonInteractions, NotificaitonInteractions>();
 builder.Services.AddScoped<IEventInteractions, EventInteractions>();
+
 
 builder.Services.AddQuartz(q =>
 {
@@ -56,6 +84,7 @@ builder.Services.AddQuartz(q =>
 
 // Add Quartz hosted service to run the scheduler
 builder.Services.AddQuartzHostedService(q => q.WaitForJobsToComplete = true);
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 

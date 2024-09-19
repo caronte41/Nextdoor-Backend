@@ -1,4 +1,7 @@
-﻿using NextDoorBackend.Business.GoogleMaps;
+﻿
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using NextDoorBackend.Business.GoogleMaps;
 using NextDoorBackend.ClassLibrary.Account.Request;
 using NextDoorBackend.ClassLibrary.Account.Response;
 using NextDoorBackend.ClassLibrary.GoogleMaps.Request;
@@ -12,15 +15,26 @@ namespace NextDoorBackend.Business.Account
     {
         private readonly AppDbContext _context;
         private readonly IGoogleMapsInteractions _googleMapsInteractions;
+        private readonly IEmailService _emailService;
 
-        public AccountInteractions(AppDbContext context, IGoogleMapsInteractions googleMapsInteractions) 
+        public AccountInteractions(AppDbContext context, IGoogleMapsInteractions googleMapsInteractions, IEmailService emailService) 
         {
             _context = context;
             _googleMapsInteractions = googleMapsInteractions;
+            _emailService = emailService;
         }
 
         public async Task<CreateAccountResponse> CreateAccount(CreateAccountRequest request)
         {
+            var existingAccount = await _context.Accounts
+        .FirstOrDefaultAsync(a => a.Email == request.Email);
+
+            if (existingAccount != null)
+            {
+                // Email already exists, return an error response
+                throw new InvalidOperationException("An account with this email already exists.");
+            }
+
             var newAccountEntity = new AccountsEntity
             {
                 Id = Guid.NewGuid(),
@@ -28,11 +42,17 @@ namespace NextDoorBackend.Business.Account
                 LastName = request.LastName,
                 Email = request.Email,
                 Phone = request.Phone,
-                Password = request.Password
+                Password = request.Password,
+                VerificationToken = Guid.NewGuid().ToString()
             };
 
             _context.Accounts.Add(newAccountEntity);
-            await _context.SaveChangesAsync();
+      
+
+            var verificationUrl = $"https://localhost:3000/verify?token={newAccountEntity.VerificationToken}";
+            var emailBody = $"Hello {newAccountEntity.FirstName},<br>Please verify your account by clicking the link below:<br><a href='{verificationUrl}'>Verify Account</a>";
+
+            await _emailService.SendEmailAsync(newAccountEntity.Email, "Verify your account", emailBody);
 
             var newProfile = new ProfilesEntity
             {
@@ -43,7 +63,7 @@ namespace NextDoorBackend.Business.Account
             };
 
             _context.Profiles.Add(newProfile);
-            await _context.SaveChangesAsync();
+       
 
             var latLngResponse = await _googleMapsInteractions.GetLatLngByAddress(new GetLanLngByAddressRequest { Address = request.Address });
             var neighborhoodId = await _googleMapsInteractions.GetNeighborhoodIdByLatLng(request.Latitude, request.Longitude);
@@ -64,6 +84,19 @@ namespace NextDoorBackend.Business.Account
                 AccountId = newAccountEntity.Id,
                 ProfileId = newProfile.Id,
                 IndividualProfileId = newProfile.Id
+            };
+        }
+        public async Task<CreateAccountResponse> VerifyAccount(string token)
+        {
+            var account = await _context.Accounts.FirstOrDefaultAsync(a => a.VerificationToken == token);
+
+            account.IsVerified = true;
+            await _context.SaveChangesAsync();
+
+            return new CreateAccountResponse
+            {
+                AccountId = account.Id
+               
             };
         }
 

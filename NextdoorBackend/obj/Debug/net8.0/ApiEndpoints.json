@@ -26,6 +26,58 @@
     ]
   },
   {
+    "ContainingType": "NextDoorBackend.Controllers.AccountController",
+    "Method": "Login",
+    "RelativePath": "api/Account/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "NextDoorBackend.ClassLibrary.Account.Request.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NextDoorBackend.ClassLibrary.Common.BaseResponseDto\u00601[[NextDoorBackend.ClassLibrary.Account.Response.LoginResponse, NextDoorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NextDoorBackend.Controllers.AccountController",
+    "Method": "VerifyAccount",
+    "RelativePath": "api/Account/VerifyAccount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NextDoorBackend.ClassLibrary.Common.BaseResponseDto\u00601[[NextDoorBackend.ClassLibrary.Account.Response.CreateAccountResponse, NextDoorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "NextDoorBackend.Controllers.EmployeeController",
     "Method": "GetEmployeeById",
     "RelativePath": "api/Employee/GetEmployeeById",
@@ -68,6 +120,32 @@
     "ReturnTypes": [
       {
         "Type": "NextDoorBackend.ClassLibrary.Common.BaseResponseDto\u00601[[NextDoorBackend.ClassLibrary.Employee.Response.UpsertEmployeeResponse, NextDoorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NextDoorBackend.Controller.EventController",
+    "Method": "AddParticipantToEvent",
+    "RelativePath": "api/Event/AddParticipantToEvent",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDto",
+        "Type": "NextDoorBackend.ClassLibrary.Event.Request.AddParticipantToEventRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NextDoorBackend.ClassLibrary.Common.BaseResponseDto\u00601[[NextDoorBackend.ClassLibrary.Event.Response.AddParticipantToEventResposne, NextDoorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -73,5 +73,18 @@ namespace NextDoorBackend.Controller
                 return BaseResponseDto<List<GetAllEventsByProfileIdResponse>>.Fail($"Internal server error: {ex.Message}");
             }
         }
+        [HttpPost("AddParticipantToEvent")]
+        public async Task<BaseResponseDto<AddParticipantToEventResposne>> AddParticipantToEvent(AddParticipantToEventRequest requestDto)
+        {
+            try
+            {
+                var response = await _eventInteractions.AddParticipantToEvent(requestDto);
+                return BaseResponseDto<AddParticipantToEventResposne>.Success(response);
+            }
+            catch (Exception ex)
+            {
+                return BaseResponseDto<AddParticipantToEventResposne>.Fail($"Internal server error: {ex.Message}");
+            }
+        }
     }
 }
