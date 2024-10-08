@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NetTopologySuite.Geometries;
 using NextDoorBackend.Data;
@@ -12,9 +13,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace NextDoorBackend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241008082854_v1.0.11")]
+    partial class v1011
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -169,40 +172,44 @@ namespace NextDoorBackend.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<string>("Address")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("CoverPhoto")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime?>("EventDay")
+                    b.Property<DateTime>("EventDay")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<DateTime?>("EventEndDay")
+                    b.Property<DateTime>("EventEndDay")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<TimeSpan?>("EventEndHour")
+                    b.Property<TimeSpan>("EventEndHour")
                         .HasColumnType("interval");
 
-                    b.Property<TimeSpan?>("EventHour")
+                    b.Property<TimeSpan>("EventHour")
                         .HasColumnType("interval");
 
                     b.Property<string>("EventName")
+                        .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int?>("NeighborhoodId")
+                    b.Property<int>("NeighborhoodId")
                         .HasColumnType("integer");
 
                     b.Property<string>("OrganizatorName")
+                        .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid?>("ProfileId")
+                    b.Property<Guid>("ProfileId")
                         .HasColumnType("uuid");
 
-                    b.Property<int?>("Status")
+                    b.Property<int>("Status")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
@@ -569,12 +576,14 @@ namespace NextDoorBackend.Migrations
                     b.HasOne("NextDoorBackend.SDK.Entities.NeighborhoodEntity", "Neighborhood")
                         .WithMany()
                         .HasForeignKey("NeighborhoodId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("NextDoorBackend.SDK.Entities.ProfilesEntity", "Profile")
                         .WithMany("Events")
                         .HasForeignKey("ProfileId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Neighborhood");
 

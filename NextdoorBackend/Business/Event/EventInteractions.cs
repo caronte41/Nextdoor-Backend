@@ -1,6 +1,7 @@
 ﻿using Mapster;
 using Microsoft.EntityFrameworkCore;
 using NextDoorBackend.Business.GoogleMaps;
+using NextDoorBackend.Business.MasterData;
 using NextDoorBackend.ClassLibrary.Event.Request;
 using NextDoorBackend.ClassLibrary.Event.Response;
 using NextDoorBackend.ClassLibrary.Post.Response;
@@ -14,11 +15,13 @@ namespace NextDoorBackend.Business.Event
     {
         private readonly AppDbContext _context;
         private readonly IGoogleMapsInteractions _googleMapsInteractions;
+        private readonly IMasterDataInteractions _masterDataInteractions;
 
-        public EventInteractions(AppDbContext context, IGoogleMapsInteractions googleMapsInteractions)
+        public EventInteractions(AppDbContext context, IGoogleMapsInteractions googleMapsInteractions, IMasterDataInteractions masterDataInteractions)
         {
             _context = context;
             _googleMapsInteractions = googleMapsInteractions;
+            _masterDataInteractions = masterDataInteractions;
         }
         public async Task<CreateEventResponse> CreateEventAsync(CreateEventRequest request)
         {
@@ -33,18 +36,24 @@ namespace NextDoorBackend.Business.Event
                 throw new Exception("Profile not found");
             }
 
-            // Step 3: Create the event
             var newEvent = new EventsEntity
             {
                 Id = Guid.NewGuid(),
                 ProfileId = (Guid)request.ProfileId,
-                EventDay = (DateTime)request.EventDay, 
-                EventHour = (TimeSpan)request.EventHour,
+                CoverPhoto = request.CoverPhoto != null ? await _masterDataInteractions.SaveFile(request.CoverPhoto, "photos") : null,
+
+                // Handle nullable DateTime? fields safely
+                EventDay = request.EventDay.HasValue ? request.EventDay.Value.ToUniversalTime() : (DateTime?)null,
+                EventHour = request.EventHour.HasValue ? request.EventHour.Value : (TimeSpan?)null,
+
+                EventEndDay = request.EventEndDay.HasValue ? request.EventEndDay.Value.ToUniversalTime() : (DateTime?)null,
+                EventEndHour = request.EventEndHour.HasValue ? request.EventEndHour.Value : (TimeSpan?)null,
+                Description = request.Description,
                 EventName = request.EventName,
                 OrganizatorName = request.OrganizatorName,
                 Address = request.Address,
                 NeighborhoodId = (int)neighborhoodId,
-                Status = (int)EventStatus.Active,  // Assuming you have an enum for status
+                Status = (int)EventStatus.Active,
             };
 
             // Step 4: Add the event to the database
@@ -127,6 +136,8 @@ namespace NextDoorBackend.Business.Event
                 throw new Exception("Profile or IndividualProfile not found");
             }
 
+            var currentViewerProfileId = profile.IndividualProfile.Id;
+
             var allEvents = await _context.Events
                 .Where(e => e.NeighborhoodId == profile.IndividualProfile.NeighborhoodId)
                 .Include(e => e.EventsParticipants) // Include participants to calculate counts
@@ -139,13 +150,48 @@ namespace NextDoorBackend.Business.Event
                     EventHour = e.EventHour,
                     Address = e.Address,
                     NeighborhoodId = e.NeighborhoodId,
-                    // Calculate Interested and Going counts
+                    IsUserParticipant = e.EventsParticipants.Any(p => p.ProfileId == currentViewerProfileId),
                     InterestedCount = e.EventsParticipants.Count(p => p.Status == ParticipationStatus.Interested),
                     GoingCount = e.EventsParticipants.Count(p => p.Status == ParticipationStatus.Going)
                 })
                 .ToListAsync();
 
             return allEvents;
+        }
+        public async Task<List<GetAllEventsByProfileIdResponse>> GetUsersEvents(GetAllEventsByProfileIdRequest request)
+        {
+            var profile = await _context.Profiles
+    .Where(p => p.Id == request.ProfileId)
+    .Include(p => p.IndividualProfile) // Ensure you load IndividualProfile to access NeighborhoodId
+    .FirstOrDefaultAsync();
+
+            if (profile == null || profile.IndividualProfile == null)
+            {
+                throw new Exception("Profile or IndividualProfile not found");
+            }
+
+            var currentViewerProfileId = profile.IndividualProfile.Id; // Assuming this is the ProfileId of the viewer
+
+            var allEvents = await _context.Events
+                .Where(e => e.ProfileId == profile.IndividualProfile.Id)
+                .Include(e => e.EventsParticipants) // Include participants to calculate counts and check participation
+                .Select(e => new GetAllEventsByProfileIdResponse
+                {
+                    Id = e.Id,
+                    EventName = e.EventName,
+                    OrganizatorName = e.OrganizatorName,
+                    EventDay = e.EventDay,
+                    EventHour = e.EventHour,
+                    Address = e.Address,
+                    NeighborhoodId = e.NeighborhoodId,
+                    InterestedCount = e.EventsParticipants.Count(p => p.Status == ParticipationStatus.Interested),
+                    GoingCount = e.EventsParticipants.Count(p => p.Status == ParticipationStatus.Going),
+                    IsUserParticipant = e.EventsParticipants.Any(p => p.ProfileId == currentViewerProfileId)
+                })
+                .ToListAsync();
+
+            return allEvents;
+
         }
         public async Task<AddParticipantToEventResposne> AddParticipantToEvent(AddParticipantToEventRequest request)
         {

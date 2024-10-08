@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gdQQm0LLCFzqiKfnQlD0yLuAB41WlAw2zTP6nVpD+j4=",
+  "Hash": "8RzYJUW0ga6Ywkub2qvw3BdoL7lP796QEW5ttmEJEHY=",
   "Source": "NextDoorBackend",
   "BasePath": "_content/NextDoorBackend",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "NextDoorBackend\\wwwroot",
       "Source": "NextDoorBackend",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\NextDoorBackend.styles.css",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\NextDoorBackend.styles.css",
       "SourceId": "NextDoorBackend",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "NextDoorBackend.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\NextDoorBackend.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\obj\\Debug\\net8.0\\scopedcss\\bundle\\NextDoorBackend.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NextDoorBackend.bundle.scp.css",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NextDoorBackend.bundle.scp.css",
       "SourceId": "NextDoorBackend",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "NextDoorBackend.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NextDoorBackend.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NextDoorBackend.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\css\\site.css",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\favicon.ico",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\js\\site.js",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\photos\\17f3e143-6f12-4c99-99fa-6443e2eac934.jpg",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\17f3e143-6f12-4c99-99fa-6443e2eac934.jpg",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "photos/17f3e143-6f12-4c99-99fa-6443e2eac934.jpg",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\photos\\17f3e143-6f12-4c99-99fa-6443e2eac934.jpg"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\photos\\21321c8e-dc30-4eed-8a2c-3e341ad31361.jpg",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\21321c8e-dc30-4eed-8a2c-3e341ad31361.jpg",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "photos/21321c8e-dc30-4eed-8a2c-3e341ad31361.jpg",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\photos\\21321c8e-dc30-4eed-8a2c-3e341ad31361.jpg"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\photos\\3e323a8e-4a4d-460b-8a6d-7ca3f1faa1f1.jpg",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\3e323a8e-4a4d-460b-8a6d-7ca3f1faa1f1.jpg",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "photos/3e323a8e-4a4d-460b-8a6d-7ca3f1faa1f1.jpg",
       "AssetKind": "All",
@@ -1252,10 +1252,276 @@
       "OriginalItemSpec": "wwwroot\\photos\\3e323a8e-4a4d-460b-8a6d-7ca3f1faa1f1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\photos\\e9923d3e-c593-4ad4-897d-cf9c48814be1.jpg",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\55297957-2db2-4b15-99c4-cdddf082ab62.jpg",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
+      "BasePath": "_content/NextDoorBackend",
+      "RelativePath": "photos/55297957-2db2-4b15-99c4-cdddf082ab62.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\55297957-2db2-4b15-99c4-cdddf082ab62.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\623610b0-273a-45f9-8ea1-87a8e2e2e160.jpg",
+      "SourceId": "NextDoorBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
+      "BasePath": "_content/NextDoorBackend",
+      "RelativePath": "photos/623610b0-273a-45f9-8ea1-87a8e2e2e160.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\623610b0-273a-45f9-8ea1-87a8e2e2e160.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\7f9c8911-b32f-4347-942b-82f9c484d009.jpg",
+      "SourceId": "NextDoorBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
+      "BasePath": "_content/NextDoorBackend",
+      "RelativePath": "photos/7f9c8911-b32f-4347-942b-82f9c484d009.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\7f9c8911-b32f-4347-942b-82f9c484d009.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\87f83bb5-32c7-4451-9367-791d6938679e.jpg",
+      "SourceId": "NextDoorBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
+      "BasePath": "_content/NextDoorBackend",
+      "RelativePath": "photos/87f83bb5-32c7-4451-9367-791d6938679e.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\87f83bb5-32c7-4451-9367-791d6938679e.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\9073ed96-feea-4598-8590-a824ce89b8e6.jpg",
+      "SourceId": "NextDoorBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
+      "BasePath": "_content/NextDoorBackend",
+      "RelativePath": "photos/9073ed96-feea-4598-8590-a824ce89b8e6.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\9073ed96-feea-4598-8590-a824ce89b8e6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\95e80eb4-9d48-4394-9147-b0b8a5dd1476.jpg",
+      "SourceId": "NextDoorBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
+      "BasePath": "_content/NextDoorBackend",
+      "RelativePath": "photos/95e80eb4-9d48-4394-9147-b0b8a5dd1476.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\95e80eb4-9d48-4394-9147-b0b8a5dd1476.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\9f1e8ace-29c2-415e-874d-d8e569dbac7f.jpg",
+      "SourceId": "NextDoorBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
+      "BasePath": "_content/NextDoorBackend",
+      "RelativePath": "photos/9f1e8ace-29c2-415e-874d-d8e569dbac7f.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\9f1e8ace-29c2-415e-874d-d8e569dbac7f.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\a05a70be-d54a-4af8-ad8d-91e78559d30c.jpg",
+      "SourceId": "NextDoorBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
+      "BasePath": "_content/NextDoorBackend",
+      "RelativePath": "photos/a05a70be-d54a-4af8-ad8d-91e78559d30c.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\a05a70be-d54a-4af8-ad8d-91e78559d30c.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\aa698229-dcf7-4109-b98b-92112b97d0c5.jpg",
+      "SourceId": "NextDoorBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
+      "BasePath": "_content/NextDoorBackend",
+      "RelativePath": "photos/aa698229-dcf7-4109-b98b-92112b97d0c5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\aa698229-dcf7-4109-b98b-92112b97d0c5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\b51410bd-171c-4cbd-a849-71514f9760ed.jpg",
+      "SourceId": "NextDoorBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
+      "BasePath": "_content/NextDoorBackend",
+      "RelativePath": "photos/b51410bd-171c-4cbd-a849-71514f9760ed.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\b51410bd-171c-4cbd-a849-71514f9760ed.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\c6e0e514-400b-402b-bab9-638af23dd314.jpg",
+      "SourceId": "NextDoorBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
+      "BasePath": "_content/NextDoorBackend",
+      "RelativePath": "photos/c6e0e514-400b-402b-bab9-638af23dd314.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\c6e0e514-400b-402b-bab9-638af23dd314.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\cd5fbc9c-aca8-4177-8380-4ae93833025a.jpg",
+      "SourceId": "NextDoorBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
+      "BasePath": "_content/NextDoorBackend",
+      "RelativePath": "photos/cd5fbc9c-aca8-4177-8380-4ae93833025a.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\cd5fbc9c-aca8-4177-8380-4ae93833025a.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\ce38462a-78d3-4157-8f84-43d456dac110.jpg",
+      "SourceId": "NextDoorBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
+      "BasePath": "_content/NextDoorBackend",
+      "RelativePath": "photos/ce38462a-78d3-4157-8f84-43d456dac110.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\ce38462a-78d3-4157-8f84-43d456dac110.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\e5503288-d536-4750-b07b-58d8ae956bf3.jpg",
+      "SourceId": "NextDoorBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
+      "BasePath": "_content/NextDoorBackend",
+      "RelativePath": "photos/e5503288-d536-4750-b07b-58d8ae956bf3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\e5503288-d536-4750-b07b-58d8ae956bf3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\e9923d3e-c593-4ad4-897d-cf9c48814be1.jpg",
+      "SourceId": "NextDoorBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "photos/e9923d3e-c593-4ad4-897d-cf9c48814be1.jpg",
       "AssetKind": "All",
@@ -1271,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\photos\\e9923d3e-c593-4ad4-897d-cf9c48814be1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\photos\\f5bcc124-4d15-46cb-959e-bcdf8260ce4c.jpg",
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\f5bcc124-4d15-46cb-959e-bcdf8260ce4c.jpg",
       "SourceId": "NextDoorBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
       "BasePath": "_content/NextDoorBackend",
       "RelativePath": "photos/f5bcc124-4d15-46cb-959e-bcdf8260ce4c.jpg",
       "AssetKind": "All",
@@ -1288,6 +1554,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\photos\\f5bcc124-4d15-46cb-959e-bcdf8260ce4c.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\f6bc9dbc-2681-40d8-ab65-a87ea2791da9.jpg",
+      "SourceId": "NextDoorBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
+      "BasePath": "_content/NextDoorBackend",
+      "RelativePath": "photos/f6bc9dbc-2681-40d8-ab65-a87ea2791da9.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\f6bc9dbc-2681-40d8-ab65-a87ea2791da9.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\f96c0b08-d36f-4faa-81a2-a2f8375b60b9.jpg",
+      "SourceId": "NextDoorBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\",
+      "BasePath": "_content/NextDoorBackend",
+      "RelativePath": "photos/f96c0b08-d36f-4faa-81a2-a2f8375b60b9.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\f96c0b08-d36f-4faa-81a2-a2f8375b60b9.jpg"
     }
   ]
 }

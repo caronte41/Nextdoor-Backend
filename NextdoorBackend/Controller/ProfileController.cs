@@ -61,16 +61,16 @@ namespace NextDoorBackend.Controller
             }
         }
         [HttpGet("GetBusinessProfileByAccountId")]
-        public async Task<BaseResponseDto<UpsertBusinessProfileRequest>> GetBusinessProfileByAccountId([FromQuery] GetIndividualProfileByAccountIdRequest requestDto)
+        public async Task<BaseResponseDto<BusinessProfileResponse>> GetBusinessProfileByAccountId([FromQuery] GetIndividualProfileByAccountIdRequest requestDto)
         {
             try
             {
                 var response = await _profileInteractions.GetBusinessProfileByAccountId(requestDto);
-                return BaseResponseDto<UpsertBusinessProfileRequest>.Success(response);
+                return BaseResponseDto<BusinessProfileResponse>.Success(response);
             }
             catch (Exception ex)
             {
-                return BaseResponseDto<UpsertBusinessProfileRequest>.Fail($"Internal server error: {ex.Message}");
+                return BaseResponseDto<BusinessProfileResponse>.Fail($"Internal server error: {ex.Message}");
             }
         }
         [HttpGet("GetAllBusinessProfiles")]

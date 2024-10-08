@@ -1,6 +1,8 @@
 ﻿using Mapster;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Hosting;
 using NextDoorBackend.Business.GoogleMaps;
+using NextDoorBackend.Business.MasterData;
 using NextDoorBackend.ClassLibrary.Common;
 using NextDoorBackend.ClassLibrary.MasterData.Response;
 using NextDoorBackend.ClassLibrary.Profile.Request;
@@ -16,10 +18,12 @@ namespace NextDoorBackend.Business.Profile
     {
         private readonly AppDbContext _context;
         private readonly IGoogleMapsInteractions _googleMapsInteractions;
-        public ProfileInteractions(AppDbContext context, IGoogleMapsInteractions googleMapsInteractions)
+        private readonly IMasterDataInteractions _masterDataInteractions;
+        public ProfileInteractions(AppDbContext context, IGoogleMapsInteractions googleMapsInteractions, IMasterDataInteractions masterDataInteractions)
         {
             _context = context;
             _googleMapsInteractions = googleMapsInteractions;
+            _masterDataInteractions = masterDataInteractions;
         }
         public async Task<UpdateIndividualProfileResponse> UpdateIndividualProfile(UpdateIndividualProfileRequest request)
         {
@@ -37,8 +41,8 @@ namespace NextDoorBackend.Business.Profile
                 if (individualProfileEntity != null)
                 {
                     // Update the individual profile entity
-                    individualProfileEntity.ProfilePhoto = request.ProfilePhoto;
-                    individualProfileEntity.CoverPhoto = request.CoverPhoto;
+                    individualProfileEntity.ProfilePhoto = request.ProfilePhoto != null ? await _masterDataInteractions.SaveFile(request.ProfilePhoto, "photos") : individualProfileEntity.ProfilePhoto;
+                    individualProfileEntity.CoverPhoto = request.CoverPhoto != null ? await _masterDataInteractions.SaveFile(request.CoverPhoto, "photos") : individualProfileEntity.CoverPhoto;
                     individualProfileEntity.Bio = request.Bio;
                     individualProfileEntity.GenderId = request.GenderId;
                     individualProfileEntity.Address = request.Address;
@@ -53,6 +57,7 @@ namespace NextDoorBackend.Business.Profile
                     };
                 }
             }
+
 
             // Return null or handle the case where the profile wasn't found
             return null;
@@ -78,7 +83,7 @@ namespace NextDoorBackend.Business.Profile
                .ThenInclude(p => p.BusinessProfile) 
                .FirstOrDefaultAsync(a => a.Id == request.AccountId && a.Profiles.Any(p => p.ProfileType == "1"));
 
-            var neighborhoodId = await _googleMapsInteractions.GetNeighborhoodIdByLatLng(request.Latitude, request.Longitude);
+            var neighborhoodId = request.Latitude ==0 ? await _googleMapsInteractions.GetNeighborhoodIdByLatLng(request.Latitude, request.Longitude):501;
 
             if (accountEntity != null)
             {
@@ -88,8 +93,9 @@ namespace NextDoorBackend.Business.Profile
                 if (businessProfileEntity != null)
                 {
                     // Update the business profile entity
-                    businessProfileEntity.LogoPhoto = request.LogoPhoto;
-                    businessProfileEntity.CoverPhoto = request.CoverPhoto;
+                   
+                    businessProfileEntity.LogoPhoto = request.LogoPhoto != null ? await _masterDataInteractions.SaveFile(request.LogoPhoto, "photos") : businessProfileEntity.LogoPhoto;
+                    businessProfileEntity.CoverPhoto = request.CoverPhoto != null ? await _masterDataInteractions.SaveFile(request.CoverPhoto, "photos") : businessProfileEntity.CoverPhoto;
                     businessProfileEntity.BusinessName = request.BusinessName;
                     businessProfileEntity.Address = request.Address;
                     businessProfileEntity.Email = request.Email;
@@ -129,8 +135,7 @@ namespace NextDoorBackend.Business.Profile
             var newBusinessProfileEntity = new BusinessProfilesEntity
             {
                 Id = newProfile.Id,
-                LogoPhoto = request.LogoPhoto,
-                CoverPhoto = request.CoverPhoto,
+              
                 BusinessName = request.BusinessName,
                 Address = request.Address,
                 Email = request.Email,
@@ -154,20 +159,36 @@ namespace NextDoorBackend.Business.Profile
             };
         }
 
-        public async Task<UpsertBusinessProfileRequest> GetBusinessProfileByAccountId(GetIndividualProfileByAccountIdRequest request)
+        public async Task<BusinessProfileResponse> GetBusinessProfileByAccountId(GetIndividualProfileByAccountIdRequest request)
         {
+    
             var account = await _context.Accounts
-        .Include(a => a.Profiles)
-        .ThenInclude(p => p.BusinessProfile)
-        .FirstOrDefaultAsync(a => a.Id == request.AccountId && a.Profiles.Any(p => p.ProfileType == "1"));
+                .Include(a => a.Profiles)
+                .ThenInclude(p => p.BusinessProfile)
+                .FirstOrDefaultAsync(a => a.Id == request.AccountId && a.Profiles.Any(p => p.ProfileType == "1"));
 
             var businessProfile = account.Profiles
-     .FirstOrDefault(p => p.ProfileType == "1")?
-     .BusinessProfile;
+                .FirstOrDefault(p => p.ProfileType == "1")?
+                .BusinessProfile;
 
-            var response = businessProfile.Adapt<UpsertBusinessProfileRequest>();
-            return response;
+            if (businessProfile != null)
+            {
+
+                var categoryNames = await _context.BusinessCategories
+                    .Where(c => businessProfile.CategoryId != null && businessProfile.CategoryId.Any(id => id == c.Id))
+                    .Select(c => c.CategoryName)
+                    .ToListAsync();
+
+                var response = businessProfile.Adapt<BusinessProfileResponse>();
+
+                response.CategoryNames = categoryNames; 
+
+                return response;
+            }
+
+            return null; 
         }
+
         public async Task<List<UpsertBusinessProfileRequest>> GetAllBusinessProfiles(BaseRequest request)
         {
             var data = await _context.BusinessProfiles.ToListAsync();

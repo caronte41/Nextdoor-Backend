@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.Data;
+﻿using Mapster;
+using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NextDoorBackend.Business.Account;
@@ -9,6 +10,8 @@ using NextDoorBackend.ClassLibrary.Account.Response;
 using NextDoorBackend.ClassLibrary.Common;
 using NextDoorBackend.ClassLibrary.MasterData.Request;
 using NextDoorBackend.ClassLibrary.MasterData.Response;
+using NextDoorBackend.ClassLibrary.Profile.Request;
+using NextDoorBackend.ClassLibrary.Profile.Response;
 using NextDoorBackend.Data;
 
 namespace NextDoorBackend.Controllers
@@ -69,13 +72,38 @@ namespace NextDoorBackend.Controllers
                 return BaseResponseDto<LoginResponse>.Fail("Account is not verified");
             }
 
-            var token = _jwtService.GenerateToken(user);
+            var profiles = await _context.Profiles
+       .Where(p => p.AccountId == user.Id)
+       .ToListAsync();
 
+            // Map profiles to ProfileResponseForLogin
+            var profileResponses = profiles.Select(p => new ProfileResponseForLogin
+            {
+                Id = p.Id,
+                ProfileType = p.ProfileType,
+                ProfileName = p.ProfileName,
+                AccountId = p.AccountId,
+                BusinessProfile = p.BusinessProfile != null
+        ? p.BusinessProfile.Adapt<BusinessProfileResponse>()
+        : null, 
+                IndividualProfile = p.IndividualProfile != null
+        ? p.IndividualProfile.Adapt<GetIndividualProfileByAccountIdResponse>()
+        : null 
+            }).ToList();
+            var token = _jwtService.GenerateToken(user);
+            // Return LoginResponse
             return BaseResponseDto<LoginResponse>.Success(new LoginResponse
             {
                 Token = token,
-                AccountId = (Guid)user.Id
+                AccountId = user.Id.Value,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Email = user.Email,
+                Profiles = profileResponses // Attach the mapped profiles here
             });
+
+          
+
         }
     }
 }

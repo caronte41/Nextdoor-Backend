@@ -1,268 +1,332 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NextDoorBackend.bundle.scp.css",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NextDoorBackend.bundle.scp.css",
       "PackagePath": "staticwebassets\\NextDoorBackend.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\photos\\17f3e143-6f12-4c99-99fa-6443e2eac934.jpg",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\17f3e143-6f12-4c99-99fa-6443e2eac934.jpg",
       "PackagePath": "staticwebassets\\photos\\17f3e143-6f12-4c99-99fa-6443e2eac934.jpg"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\photos\\21321c8e-dc30-4eed-8a2c-3e341ad31361.jpg",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\21321c8e-dc30-4eed-8a2c-3e341ad31361.jpg",
       "PackagePath": "staticwebassets\\photos\\21321c8e-dc30-4eed-8a2c-3e341ad31361.jpg"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\photos\\3e323a8e-4a4d-460b-8a6d-7ca3f1faa1f1.jpg",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\3e323a8e-4a4d-460b-8a6d-7ca3f1faa1f1.jpg",
       "PackagePath": "staticwebassets\\photos\\3e323a8e-4a4d-460b-8a6d-7ca3f1faa1f1.jpg"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\photos\\e9923d3e-c593-4ad4-897d-cf9c48814be1.jpg",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\55297957-2db2-4b15-99c4-cdddf082ab62.jpg",
+      "PackagePath": "staticwebassets\\photos\\55297957-2db2-4b15-99c4-cdddf082ab62.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\623610b0-273a-45f9-8ea1-87a8e2e2e160.jpg",
+      "PackagePath": "staticwebassets\\photos\\623610b0-273a-45f9-8ea1-87a8e2e2e160.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\7f9c8911-b32f-4347-942b-82f9c484d009.jpg",
+      "PackagePath": "staticwebassets\\photos\\7f9c8911-b32f-4347-942b-82f9c484d009.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\87f83bb5-32c7-4451-9367-791d6938679e.jpg",
+      "PackagePath": "staticwebassets\\photos\\87f83bb5-32c7-4451-9367-791d6938679e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\9073ed96-feea-4598-8590-a824ce89b8e6.jpg",
+      "PackagePath": "staticwebassets\\photos\\9073ed96-feea-4598-8590-a824ce89b8e6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\95e80eb4-9d48-4394-9147-b0b8a5dd1476.jpg",
+      "PackagePath": "staticwebassets\\photos\\95e80eb4-9d48-4394-9147-b0b8a5dd1476.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\9f1e8ace-29c2-415e-874d-d8e569dbac7f.jpg",
+      "PackagePath": "staticwebassets\\photos\\9f1e8ace-29c2-415e-874d-d8e569dbac7f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\a05a70be-d54a-4af8-ad8d-91e78559d30c.jpg",
+      "PackagePath": "staticwebassets\\photos\\a05a70be-d54a-4af8-ad8d-91e78559d30c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\aa698229-dcf7-4109-b98b-92112b97d0c5.jpg",
+      "PackagePath": "staticwebassets\\photos\\aa698229-dcf7-4109-b98b-92112b97d0c5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\b51410bd-171c-4cbd-a849-71514f9760ed.jpg",
+      "PackagePath": "staticwebassets\\photos\\b51410bd-171c-4cbd-a849-71514f9760ed.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\c6e0e514-400b-402b-bab9-638af23dd314.jpg",
+      "PackagePath": "staticwebassets\\photos\\c6e0e514-400b-402b-bab9-638af23dd314.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\cd5fbc9c-aca8-4177-8380-4ae93833025a.jpg",
+      "PackagePath": "staticwebassets\\photos\\cd5fbc9c-aca8-4177-8380-4ae93833025a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\ce38462a-78d3-4157-8f84-43d456dac110.jpg",
+      "PackagePath": "staticwebassets\\photos\\ce38462a-78d3-4157-8f84-43d456dac110.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\e5503288-d536-4750-b07b-58d8ae956bf3.jpg",
+      "PackagePath": "staticwebassets\\photos\\e5503288-d536-4750-b07b-58d8ae956bf3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\e9923d3e-c593-4ad4-897d-cf9c48814be1.jpg",
       "PackagePath": "staticwebassets\\photos\\e9923d3e-c593-4ad4-897d-cf9c48814be1.jpg"
     },
     {
-      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend\\NextDoorBackend\\wwwroot\\photos\\f5bcc124-4d15-46cb-959e-bcdf8260ce4c.jpg",
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\f5bcc124-4d15-46cb-959e-bcdf8260ce4c.jpg",
       "PackagePath": "staticwebassets\\photos\\f5bcc124-4d15-46cb-959e-bcdf8260ce4c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\f6bc9dbc-2681-40d8-ab65-a87ea2791da9.jpg",
+      "PackagePath": "staticwebassets\\photos\\f6bc9dbc-2681-40d8-ab65-a87ea2791da9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Momo\\Documents\\GitHub\\Nextdoor-Backend-Clone\\NextDoorBackend\\wwwroot\\photos\\f96c0b08-d36f-4faa-81a2-a2f8375b60b9.jpg",
+      "PackagePath": "staticwebassets\\photos\\f96c0b08-d36f-4faa-81a2-a2f8375b60b9.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.NextDoorBackend.Microsoft.AspNetCore.StaticWebAssets.props",

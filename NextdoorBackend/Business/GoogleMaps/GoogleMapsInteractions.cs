@@ -90,7 +90,7 @@ namespace NextDoorBackend.Business.GoogleMaps
                         new NpgsqlParameter("@latitude", latitude))
                     .FirstOrDefaultAsync();
 
-                return neighborhood.Id;
+                return neighborhood?.Id;
             }
             catch (Exception ex)
             {

@@ -41,6 +41,17 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policyBuilder =>
+    {
+        policyBuilder.WithOrigins("http://localhost:3000", "https://localhost:3000") // Allow frontend URLs
+                     .AllowAnyHeader()
+                     .AllowAnyMethod()
+                     .AllowCredentials(); // If you are using authentication cookies or tokens
+    });
+});
+
 // Add services to the container.
 builder.Services.AddControllers(); // Ensure this is present for API controllers
 builder.Services.AddEndpointsApiExplorer();
@@ -103,6 +114,8 @@ else
     app.UseExceptionHandler("/Error");
     app.UseHsts();
 }
+
+app.UseCors("AllowFrontend");
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
