@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NextDoorBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+189a2a7fc9baea670db17884707715d876c44380")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+355b527ebc1c5324fbdb0ee1fab3fd7d2632a50b")]
 [assembly: System.Reflection.AssemblyProductAttribute("NextDoorBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NextDoorBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
